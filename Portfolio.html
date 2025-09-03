@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst & Information Management Specialist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --text: #333;
+            --light-text: #777;
+            --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: #f9f9f9;
+            scroll-behavior: smooth;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 600;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background: var(--gradient);
+            color: white;
+            padding: 80px 0 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='0.1' d='M0,128L48,117.3C96,107,192,85,288,112C384,139,480,213,576,218.7C672,224,768,160,864,138.7C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+            background-size: cover;
+            background-position: center;
+        }
+        
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            position: relative;
+            animation: fadeInDown 1s ease;
+        }
+        
+        header p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            position: relative;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .header-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            position: relative;
+            animation: fadeIn 1.5s ease;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-primary {
+            background: white;
+            color: var(--primary);
+        }
+        
+        .btn-primary:hover {
+            background: var(--light);
+            transform: translateY(-3px);
+        }
+        
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+        }
+        
+        .btn-outline:hover {
+            background: white;
+            color: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        /* Navigation */
+        nav {
+            background: white;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: var(--gradient);
+            transition: var(--transition);
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        /* Sections */
+        section {
+            padding: 20px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--gradient);
+            margin: 0 auto;
+            border-radius: 2px;
+        }
+        
+        .section-title p {
+            max-width: 700px;
+            margin: 15px auto 0;
+            color: var(--light-text);
+        }
+        
+        /* About Section */
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .profile-img {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .profile-img::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            right: -20px;
+            bottom: 20px;
+            background: var(--gradient);
+            border-radius: 10px;
+            z-index: -1;
+            opacity: 0.7;
+        }
+        
+        .profile-img img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        /* Skills Section */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .skill-category {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .skill-category:hover {
+            transform: translateY(-10px);
+        }
+        
+        .skill-category h3 {
+            color: var(--secondary);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .skill-category h3 i {
+            margin-right: 10px;
+            color: var(--primary);
+        }
+        
+        .skill-list {
+            list-style-type: none;
+        }
+        
+        .skill-list li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .skill-list li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-size: 1.2rem;
+        }
+        
+        /* Experience Section */
+        .experience-item {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-left: 5px solid var(--secondary);
+        }
+        
+        .experience-item:hover {
+            transform: translateX(10px);
+        }
+        
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .experience-header h3 {
+            color: var(--primary);
+            font-size: 1.5rem;
+        }
+        
+        .experience-date {
+            color: var(--secondary);
+            font-weight: bold;
+            background: var(--light);
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+        
+        .experience-company {
+            font-style: italic;
+            margin-bottom: 20px;
+            color: var(--light-text);
+            font-size: 1.1rem;
+        }
+        
+        .responsibilities {
+            list-style-type: none;
+            columns: 2;
+            column-gap: 30px;
+        }
+        
+        .responsibilities li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+            break-inside: avoid;
+        }
+        
+        .responsibilities li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        /* Education Section */
+        .education-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+        }
+        
+        .education-item {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .education-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .education-icon {
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        
+        .education-item h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+        
+        .education-details {
+            color: var(--light-text);
+            font-style: italic;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        /* Contact Section */
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .contact-info {
+            background: var(--gradient);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .contact-details {
+            list-style: none;
+        }
+        
+        .contact-details li {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-details i {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            color: white;
+            width: 30px;
+        }
+        
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            transition: var(--transition);
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-section h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--secondary);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .responsibilities {
+                columns: 1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                padding: 60px 0 40px;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-container {
+                flex-direction: column;
+            }
+            
+            .nav-links {
+                margin-top: 20px;
+                justify-content: center;
+            }
+            
+            .nav-links li {
+                margin: 0 10px;
+            }
+            
+            .experience-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .experience-date {
+                margin-top: 10px;
+            }
+            
+            .header-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 250px;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .education-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="home">
+        <div class="container">
+            <h1>Data Analyst & Information Management Specialist</h1>
+            <p>Transforming complex data into actionable insights for business and humanitarian decision-making</p>
+            <div class="header-buttons">
+                <a href="#contact" class="btn btn-primary">Hire Me</a>
+                <a href="#portfolio" class="btn btn-outline">View Portfolio</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">DataExpert</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Professional Summary</h2>
+                <p>10+ years of experience in data analysis and information management</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Data Analyst & Information Management Specialist with 10+ years of experience in transforming complex data into actionable insights for business and humanitarian decision-making. Skilled in SQL, Power BI, and Python for data extraction, analysis, and visualization.</p>
+                    <p>Proven ability to develop dashboards, automate reporting, and uncover trends to drive operational efficiency. Adept at collaborating with cross-functional teams to deliver data-driven solutions in fast-paced environments.</p>
+                    <p>My expertise spans across geospatial analysis, database management, and information system design, with a strong track record in both private sector and humanitarian contexts.</p>
+                </div>
+                <div class="profile-img">
+                    <img src="https://placehold.co/600x600/2c3e50/FFFFFF/png?text=Profile+Image" alt="Profile Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>Key Competencies</h2>
+                <p>Comprehensive skill set in data analysis, visualization, and management</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-line"></i> Data Analysis & BI</h3>
+                    <ul class="skill-list">
+                        <li>Advanced proficiency in SQL, Excel, Power BI, and Python</li>
+                        <li>Trend analysis, segmentation, and performance optimization</li>
+                        <li>Data extraction, transformation, and loading (ETL) processes</li>
+                        <li>Quantitative and qualitative data analysis</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-pie"></i> Data Visualization</h3>
+                    <ul class="skill-list">
+                        <li>Developing interactive dashboards (Power BI, Tableau)</li>
+                        <li>Automated reporting for stakeholders</li>
+                        <li>Infographics and data presentation</li>
+                        <li>GIS mapping and spatial visualization</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Database Management</h3>
+                    <ul class="skill-list">
+                        <li>PostgreSQL, SQL Server, and geodatabases</li>
+                        <li>Data integrity and efficient retrieval</li>
+                        <li>Database administration and optimization</li>
+                        <li>Geo-database design and implementation</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-calculator"></i> Statistical Analysis</h3>
+                    <ul class="skill-list">
+                        <li>A/B testing and needs assessments</li>
+                        <li>Forecasting using quantitative methods</li>
+                        <li>Geospatial analysis and mapping</li>
+                        <li>Monitoring and evaluation frameworks</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-users"></i> Stakeholder Communication</h3>
+                    <ul class="skill-list">
+                        <li>Translating technical findings into actionable insights</li>
+                        <li>Cross-functional collaboration</li>
+                        <li>Training and capacity-building workshops</li>
+                        <li>Project coordination with multiple stakeholders</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Technical Tools</h3>
+                    <ul class="skill-list">
+                        <li>GIS Software: ArcGIS, QGIS</li>
+                        <li>Programming: Python, R, JavaScript</li>
+                        <li>Database: PostgreSQL, SQL Server, ActivityInfo</li>
+                        <li>Visualization: Power BI, Tableau, Excel</li>
+                        <li>Web: HTML, CSS, GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Professional Experience</h2>
+                <p>Proven track record in data analysis and information management roles</p>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Information Management Officer</h3>
+                    <span class="experience-date">October 2023 – Present</span>
+                </div>
+                <div class="experience-company">IOM (International Organization for Migration) | Addis Ababa, Ethiopia</div>
+                <ul class="responsibilities">
+                    <li>Compile, analyze, and present data on a variety of project topics to support decision-making.</li>
+                    <li>Manage databases for effective data organization.</li>
+                    <li>Integrate dashboards with ActivityInfo using tokenization to enhance 4W (Who, What, Where, When) data analysis.</li>
+                    <li>Update the cluster website with information management products, and other essential resources.</li>
+                    <li>Coordinate project implementation, liaising with internal units and external partners to manage administrative actions.</li>
+                    <li>Draft correspondence on project matters and prepare and update reports, presentations, graphics, and statistical tables.</li>
+                    <li>Participate in meetings and conferences; coordinate activities with local authorities, UN agencies, NGOs, and donors.</li>
+                    <li>Deliver monthly dashboards, infographics, maps, and other reports for stakeholders, including donors and partners.</li>
+                    <li>Conduct training and capacity-building workshops at national and subnational levels.</li>
+                    <li>Monitor and evaluate project activities, tracking progress and using quantitative and qualitative data to inform continuous improvement.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Information Management Officer</h3>
+                    <span class="experience-date">October 2022 – September 2023</span>
+                </div>
+                <div class="experience-company">iMMAP (Information Management and Mine Action Programs) | Bahir Dar and Mekelle, Ethiopia</div>
+                <ul class="responsibilities">
+                    <li>Developed and delivered high-quality information management outputs, including infographics, maps, reports, and needs assessments to support humanitarian operations.</li>
+                    <li>Collected, managed, and analyzed spatial and non-spatial data to drive informed decision-making.</li>
+                    <li>Supported local and international NGOs, collaborating with UN agencies and government bodies to strengthen information management for humanitarian interventions.</li>
+                    <li>Led capacity-building initiatives and supervised team members to enhance skill development.</li>
+                    <li>Created and contributed to sector-specific maps and graphics for effective planning and impact analysis.</li>
+                    <li>Conducted data analysis and visualization for presentation to stakeholders.</li>
+                    <li>Established and maintained geographic information systems, producing GIS-related products for operational use and information dissemination.</li>
+                    <li>Managed humanitarian data systems, including Kobo and humanitarian websites, to streamline data collection and access.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>GIS Manager</h3>
+                    <span class="experience-date">May 2022 – September 2022</span>
+                </div>
+                <div class="experience-company">Miya S.a.r.l. | Addis Ababa, Ethiopia</div>
+                <ul class="responsibilities">
+                    <li>Developed training materials and supported the GIS expert in delivering technical training sessions on geospatial analysis and data management.</li>
+                    <li>Supervised the GIS team, overseeing daily tasks, and ensuring adherence to project timelines, data accuracy, and quality standards.</li>
+                    <li>Monitored and evaluated team performance, implementing metrics to ensure weekly quotas and project milestones were met.</li>
+                    <li>Led quality assurance and quality control (QA/QC) activities, reviewing data accuracy, consistency, and integrity across all GIS outputs.</li>
+                    <li>Contributed to the digitization of network assets, ensuring precise mapping and documentation of infrastructure data.</li>
+                    <li>Assisted GIS experts in managing and optimizing geodatabases and geo-webservers to ensure efficient data access, processing, and storage.</li>
+                    <li>Ensured continuous GIS system operation and maintained updated datasets to support ongoing projects and client requirements.</li>
+                    <li>Developed and implemented monitoring and evaluation frameworks to assess GIS project outcomes, ensuring alignment with client and organizational objectives.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Geospatial Information Analyst and Geo-database Administrator</h3>
+                    <span class="experience-date">July 2010 – April 2022</span>
+                </div>
+                <div class="experience-company">Information Network Security Administration | Addis Ababa, Ethiopia</div>
+                <ul class="responsibilities">
+                    <li>Administered, supported, and monitored geospatial databases, proactively resolving issues to ensure server stability and data integrity.</li>
+                    <li>Collected, managed, and analyzed spatial and non-spatial data, presenting insights through advanced GIS tools and methodologies.</li>
+                    <li>Designed and implemented sophisticated methodologies and tools for efficient data collection, analysis, and visualization.</li>
+                    <li>Authored and coded logical and physical database schemas, ensuring accurate representation and retrieval of geospatial data.</li>
+                    <li>Conducted quality assurance checks, maintaining high standards of data accuracy and consistency.</li>
+                    <li>Organized and classified data by analyzing and interpreting diverse datasets for structured information management.</li>
+                    <li>Researched and synthesized information into briefing papers, reports, and project documents to support decision-making.</li>
+                    <li>Established and enhanced databases in collaboration with analysts and programmers, coding data for streamlined retrieval and analysis.</li>
+                    <li>Performed data cleaning and modeling to optimize data usability and accuracy.</li>
+                    <li>Prepared base maps for various projects, supporting visualization and planning needs.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <div class="section-title">
+                <h2>Education</h2>
+                <p>Academic background in Geoinformatics and Remote Sensing</p>
+            </div>
+            
+            <div class="education-container">
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>M.Sc. in Remote Sensing and Geoinformatics</h3>
+                    <div class="education-details">Addis Ababa University – Addis Ababa, Ethiopia</div>
+                    <p>2015 – 2017</p>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>B.Sc. in Geoinformatics</h3>
+                    <div class="education-details">Adama Science and Technology University – Adama, Ethiopia</div>
+                    <p>2007 – 2010</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+                <p>Available for freelance projects on Upwork, Freelancer, and Fiverr</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>mezgebedingil@outlook.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+251 947 723 995</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Addis Ababa, Ethiopia</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Available for freelance projects</span>
+                        </li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-upwork"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>DataExpert</h3>
+                    <p>Transforming complex data into actionable insights for informed decision-making and business growth.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-upwork"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Data Analysis</a></li>
+                        <li><a href="#">Dashboard Development</a></li>
+                        <li><a href="#">GIS Mapping</a></li>
+                        <li><a href="#">Database Management</a></li>
+                        <li><a href="#">Consulting</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Data Analyst & Information Management Specialist | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for form validation and smooth scrolling
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Form validation
+            const contactForm = document.querySelector('.contact-form form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Simple validation
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const subject = document.getElementById('subject').value;
+                    const message = document.getElementById('message').value;
+                    
+                    if (name && email && subject && message) {
+                        alert('Thank you for your message! I will get back to you soon.');
+                        contactForm.reset();
+                    } else {
+                        alert('Please fill in all fields.');
+                    }
+                });
+            }
+            
+            // Animate elements on scroll
+            const animateOnScroll = function() {
+                const elements = document.querySelectorAll('.skill-category, .experience-item, .education-item');
+                
+                elements.forEach(element => {
+                    const position = element.getBoundingClientRect();
+                    
+                    // If element is in viewport
+                    if (position.top < window.innerHeight - 100) {
+                        element.style.opacity = 1;
+                        element.style.transform = 'translateY(0)';
+                    }
+                });
+            };
+            
+            // Set initial state for animation
+            document.querySelectorAll('.skill-category, .experience-item, .education-item').forEach(element => {
+                element.style.opacity = 0;
+                element.style.transform = 'translateY(50px)';
+                element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            });
+            
+            // Run on load and scroll
+            window.addEventListener('load', animateOnScroll);
+            window.addEventListener('scroll', animateOnScroll);
+        });
+    </script>
+</body>
+</html>
