@@ -311,6 +311,57 @@
             font-size: 1.2rem;
         }
         
+        /* GIS & Remote Sensing Section */
+        .gis-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .gis-item {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .gis-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .gis-icon {
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        
+        .gis-item h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .gis-item p {
+            color: var(--light-text);
+            margin-bottom: 15px;
+        }
+        
+        .gis-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .gis-link:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+        
         /* Experience Section */
         .experience-item {
             background-color: white;
@@ -664,6 +715,10 @@
             .contact-container {
                 grid-template-columns: 1fr;
             }
+            
+            .gis-container {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -688,6 +743,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#gis">GIS & RS</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -781,6 +837,53 @@
                         <li>Visualization: Power BI, Tableau, Excel</li>
                         <li>Web: HTML, CSS, GitHub</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GIS & Remote Sensing Section -->
+    <section id="gis">
+        <div class="container">
+            <div class="section-title">
+                <h2>GIS & Remote Sensing Focus</h2>
+                <p>Specialized expertise in geospatial analysis and remote sensing technologies</p>
+            </div>
+            <div class="gis-container">
+                <div class="gis-item">
+                    <div class="gis-icon">
+                        <i class="fas fa-globe-africa"></i>
+                    </div>
+                    <h3>Spatial Analysis</h3>
+                    <p>Advanced geospatial analysis using ArcGIS, QGIS, and Python libraries for spatial data processing, modeling, and visualization.</p>
+                    <a href="https://onedrive.live.com/" class="gis-link" target="_blank">View GIS Portfolio</a>
+                </div>
+                
+                <div class="gis-item">
+                    <div class="gis-icon">
+                        <i class="fas fa-satellite"></i>
+                    </div>
+                    <h3>Remote Sensing</h3>
+                    <p>Processing and analyzing satellite imagery for land use classification, change detection, and environmental monitoring applications.</p>
+                    <a href="https://onedrive.live.com/" class="gis-link" target="_blank">View RS Projects</a>
+                </div>
+                
+                <div class="gis-item">
+                    <div class="gis-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Cartography & Mapping</h3>
+                    <p>Designing professional maps and interactive web mapping applications for humanitarian response and business intelligence.</p>
+                    <a href="https://onedrive.live.com/" class="gis-link" target="_blank">View Map Gallery</a>
+                </div>
+                
+                <div class="gis-item">
+                    <div class="gis-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Geodatabase Management</h3>
+                    <p>Designing, implementing, and maintaining spatial databases for efficient storage, retrieval, and analysis of geospatial data.</p>
+                    <a href="https://onedrive.live.com/" class="gis-link" target="_blank">View Database Projects</a>
                 </div>
             </div>
         </div>
@@ -927,8 +1030,8 @@
                             <span>Addis Ababa, Ethiopia</span>
                         </li>
                         <li>
-                            <i class="fas fa-clock"></i>
-                            <span>Available for freelance projects</span>
+                            <i class="fas fa-cloud"></i>
+                            <span><a href="https://onedrive.live.com/" style="color: white; text-decoration: underline;" target="_blank">Access my OneDrive Portfolio</a></span>
                         </li>
                     </ul>
                     <div class="social-links">
@@ -986,6 +1089,7 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#skills">Skills</a></li>
+                        <li><a href="#gis">GIS & RS</a></li>
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -997,6 +1101,7 @@
                         <li><a href="#">Data Analysis</a></li>
                         <li><a href="#">Dashboard Development</a></li>
                         <li><a href="#">GIS Mapping</a></li>
+                        <li><a href="#">Remote Sensing</a></li>
                         <li><a href="#">Database Management</a></li>
                         <li><a href="#">Consulting</a></li>
                     </ul>
@@ -1053,7 +1158,7 @@
             
             // Animate elements on scroll
             const animateOnScroll = function() {
-                const elements = document.querySelectorAll('.skill-category, .experience-item, .education-item');
+                const elements = document.querySelectorAll('.skill-category, .experience-item, .education-item, .gis-item');
                 
                 elements.forEach(element => {
                     const position = element.getBoundingClientRect();
@@ -1067,7 +1172,7 @@
             };
             
             // Set initial state for animation
-            document.querySelectorAll('.skill-category, .experience-item, .education-item').forEach(element => {
+            document.querySelectorAll('.skill-category, .experience-item, .education-item, .gis-item').forEach(element => {
                 element.style.opacity = 0;
                 element.style.transform = 'translateY(50px)';
                 element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
@@ -1079,7 +1184,4 @@
         });
     </script>
 </body>
-
 </html>
-
-
