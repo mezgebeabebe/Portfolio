@@ -466,7 +466,7 @@
             font-size: 1.1rem;
         }
         
-        /* Contact Section */
+        /*  Section */
         .contact-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1006,8 +1006,7 @@
     </section>
 
     <!-- Contact Section -->
-    <!-- Contact Section -->
-<section id="contact">
+    <section id="contact">
     <div class="container">
         <div class="section-title">
             <h2>Contact Me</h2>
@@ -1044,27 +1043,35 @@
             </div>
             
             <div class="contact-form">
-    <h3>Send a Message</h3>
-    <form action="https://formspree.io/f/mdkwvlqg" method="POST">
-        <div class="form-group">
-            <label>Your Name</label>
-            <input type="text" name="name" class="form-control" required>
-        </div>
-        <div class="form-group">
-            <label>Your Email</label>
-            <input type="email" name="_replyto" class="form-control" required>
-        </div>
-        <div class="form-group">
-            <label>Subject</label>
-            <input type="text" name="_subject" class="form-control" required>
-        </div>
-        <div class="form-group">
-            <label>Your Message</label>
-            <textarea name="message" class="form-control" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-    </form>
-</div>
+                <h3>Send a Message</h3>
+                <form action="https://formspree.io/f/mdkwvlqg" method="POST">
+                    <div class="form-group">
+                        <label>
+                            Your Name:
+                            <input type="text" name="name" class="form-control" required>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Your Email:
+                            <input type="email" name="email" class="form-control" required>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Subject:
+                            <input type="text" name="subject" class="form-control" required>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            Your Message:
+                            <textarea name="message" class="form-control" required></textarea>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
         </div>
     </div>
 </section>
@@ -1186,6 +1193,7 @@
     </script>
 </body>
 </html>
+
 
 
 
