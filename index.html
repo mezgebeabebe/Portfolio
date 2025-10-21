@@ -1042,11 +1042,9 @@
                 </div>
             </div>
             
-           <div class="contact-form">
+         <div class="contact-form">
     <h3>Send a Message</h3>
     <form action="https://formspree.io/f/mdkwvlqg" method="POST">
-        <input type="hidden" name="_subject" value="New Contact Form Submission from Portfolio">
-        
         <div class="form-group">
             <label>Your Name:</label>
             <input type="text" name="name" class="form-control" required>
@@ -1057,7 +1055,7 @@
         </div>
         <div class="form-group">
             <label>Subject:</label>
-            <input type="text" name="_subject" class="form-control" required>
+            <input type="text" name="subject" class="form-control" required>
         </div>
         <div class="form-group">
             <label>Your Message:</label>
@@ -1125,72 +1123,72 @@
         document.addEventListener('DOMContentLoaded', function() {
             // Smooth scrolling for navigation links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 80,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
             });
+        });
             
             // Form validation
-            const contactForm = document.querySelector('.contact-form form');
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    // Simple validation
-                    const name = document.getElementById('name').value;
-                    const email = document.getElementById('email').value;
-                    const subject = document.getElementById('subject').value;
-                    const message = document.getElementById('message').value;
-                    
-                    if (name && email && subject && message) {
-                        alert('Thank you for your message! I will get back to you soon.');
-                        contactForm.reset();
-                    } else {
-                        alert('Please fill in all fields.');
-                    }
-                });
-            }
-            
-            // Animate elements on scroll
-            const animateOnScroll = function() {
-                const elements = document.querySelectorAll('.skill-category, .experience-item, .education-item, .gis-item');
+           const contactForm = document.querySelector('.contact-form form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                // REMOVED: e.preventDefault(); // This was preventing Formspree from working
                 
-                elements.forEach(element => {
-                    const position = element.getBoundingClientRect();
-                    
-                    // If element is in viewport
-                    if (position.top < window.innerHeight - 100) {
-                        element.style.opacity = 1;
-                        element.style.transform = 'translateY(0)';
-                    }
-                });
-            };
-            
-            // Set initial state for animation
-            document.querySelectorAll('.skill-category, .experience-item, .education-item, .gis-item').forEach(element => {
-                element.style.opacity = 0;
-                element.style.transform = 'translateY(50px)';
-                element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                // Simple validation - let Formspree handle validation
+                const name = document.querySelector('input[name="name"]').value;
+                const email = document.querySelector('input[name="email"]').value;
+                const subject = document.querySelector('input[name="_subject"]').value;
+                const message = document.querySelector('textarea[name="message"]').value;
+                
+                if (!name || !email || !subject || !message) {
+                    e.preventDefault(); // Only prevent if validation fails
+                    alert('Please fill in all fields.');
+                }
+                // If validation passes, let the form submit to Formspree normally
             });
+        }
+        
+        // Animate elements on scroll
+        const animateOnScroll = function() {
+            const elements = document.querySelectorAll('.skill-category, .experience-item, .education-item, .gis-item');
             
-            // Run on load and scroll
-            window.addEventListener('load', animateOnScroll);
-            window.addEventListener('scroll', animateOnScroll);
+            elements.forEach(element => {
+                const position = element.getBoundingClientRect();
+                
+                // If element is in viewport
+                if (position.top < window.innerHeight - 100) {
+                    element.style.opacity = 1;
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+        
+        // Set initial state for animation
+        document.querySelectorAll('.skill-category, .experience-item, .education-item, .gis-item').forEach(element => {
+            element.style.opacity = 0;
+            element.style.transform = 'translateY(50px)';
+            element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
         });
-    </script>
+        
+        // Run on load and scroll
+        window.addEventListener('load', animateOnScroll);
+        window.addEventListener('scroll', animateOnScroll);
+    });
+</script>
 </body>
 </html>
+
 
 
 
