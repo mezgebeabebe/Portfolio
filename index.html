@@ -319,81 +319,82 @@
             font-size: 1rem;
         }
         
-        /* GIS & Remote Sensing Section - Updated Compact Design */
-        .gis-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-        
-        .gis-item {
-            background-color: white;
-            padding: 25px 20px;
-            border-radius: 12px;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            text-align: center;
-            border: 1px solid rgba(52, 152, 219, 0.1);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .gis-item::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: var(--gradient);
-        }
-        
-        .gis-item:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-        }
-        
-        .gis-icon {
-            font-size: 2.5rem;
-            color: var(--secondary);
-            margin-bottom: 15px;
-            height: 70px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .gis-item h3 {
-            color: var(--primary);
-            margin-bottom: 12px;
-            font-size: 1.3rem;
-            min-height: 3rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .gis-item p {
-            color: var(--light-text);
-            margin-bottom: 15px;
-            font-size: 0.95rem;
-            line-height: 1.5;
-        }
-        
-        .gis-link {
-            display: inline-block;
-            margin-top: 10px;
-            color: var(--secondary);
-            text-decoration: none;
-            font-weight: 500;
-            transition: var(--transition);
-            font-size: 0.9rem;
-        }
-        
-        .gis-link:hover {
-            color: var(--primary);
-            text-decoration: underline;
-        }
+       /* GIS & Remote Sensing Section - Single Row Layout */
+.gis-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    justify-content: center;
+}
+
+.gis-item {
+    background-color: white;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-align: center;
+    border: 1px solid rgba(52, 152, 219, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.gis-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient);
+}
+
+.gis-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.gis-icon {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 15px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gis-item h3 {
+    color: var(--primary);
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gis-item p {
+    color: var(--light-text);
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.gis-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    font-size: 0.9rem;
+}
+
+.gis-link:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
         
         /* Experience Section */
         .experience-item {
@@ -682,6 +683,14 @@
         }
         
         /* Responsive Design */
+
+@media (max-width: 1200px) {
+    .gis-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+        
         @media (max-width: 992px) {
             header h1 {
                 font-size: 2.5rem;
@@ -744,8 +753,9 @@
             }
             
             .gis-container {
-                grid-template-columns: 1fr;
-            }
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
         }
         
         @media (max-width: 576px) {
@@ -1320,3 +1330,4 @@
     </script>
 </body>
 </html>
+
