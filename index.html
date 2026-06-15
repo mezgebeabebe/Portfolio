@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Analytics & Information Management Specialist</title>
+    <title>Mezgebe Abebe | Information Management Professional</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -68,14 +68,14 @@
         }
         
         header h1 {
-            font-size: 3rem;
+            font-size: 2.8rem;
             margin-bottom: 15px;
             position: relative;
             animation: fadeInDown 1s ease;
         }
         
         header p {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             max-width: 800px;
             margin: 0 auto 30px;
             position: relative;
@@ -184,7 +184,7 @@
         
         /* Sections */
         section {
-            padding: 20px 0;
+            padding: 60px 0;
         }
         
         .section-title {
@@ -231,7 +231,8 @@
         
         .about-text p {
             margin-bottom: 20px;
-            font-size: 1.1rem;
+            font-size: 1rem;
+            line-height: 1.7;
         }
         
         .profile-img {
@@ -261,7 +262,7 @@
             box-shadow: var(--shadow);
         }
         
-        /* Skills Section - Updated Compact Design */
+        /* Skills Section */
         .skills-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -319,82 +320,67 @@
             font-size: 1rem;
         }
         
-       /* GIS & Remote Sensing Section - Single Row Layout */
-.gis-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-    justify-content: center;
-}
-
-.gis-item {
-    background-color: white;
-    padding: 25px 20px;
-    border-radius: 12px;
-    box-shadow: var(--shadow);
-    transition: var(--transition);
-    text-align: center;
-    border: 1px solid rgba(52, 152, 219, 0.1);
-    position: relative;
-    overflow: hidden;
-}
-
-.gis-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: var(--gradient);
-}
-
-.gis-item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-}
-
-.gis-icon {
-    font-size: 2.5rem;
-    color: var(--secondary);
-    margin-bottom: 15px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.gis-item h3 {
-    color: var(--primary);
-    margin-bottom: 12px;
-    font-size: 1.3rem;
-    min-height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.gis-item p {
-    color: var(--light-text);
-    margin-bottom: 15px;
-    font-size: 0.95rem;
-    line-height: 1.5;
-}
-
-.gis-link {
-    display: inline-block;
-    margin-top: 10px;
-    color: var(--secondary);
-    text-decoration: none;
-    font-weight: 500;
-    transition: var(--transition);
-    font-size: 0.9rem;
-}
-
-.gis-link:hover {
-    color: var(--primary);
-    text-decoration: underline;
-}
+        /* GIS Section */
+        .gis-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            justify-content: center;
+        }
+        
+        .gis-item {
+            background-color: white;
+            padding: 25px 20px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+            border: 1px solid rgba(52, 152, 219, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .gis-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient);
+        }
+        
+        .gis-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .gis-icon {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 15px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .gis-item h3 {
+            color: var(--primary);
+            margin-bottom: 12px;
+            font-size: 1.3rem;
+            min-height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .gis-item p {
+            color: var(--light-text);
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
         
         /* Experience Section */
         .experience-item {
@@ -421,7 +407,7 @@
         
         .experience-header h3 {
             color: var(--primary);
-            font-size: 1.5rem;
+            font-size: 1.4rem;
         }
         
         .experience-date {
@@ -430,13 +416,14 @@
             background: var(--light);
             padding: 5px 15px;
             border-radius: 20px;
+            font-size: 0.9rem;
         }
         
         .experience-company {
             font-style: italic;
             margin-bottom: 20px;
             color: var(--light-text);
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
         
         .responsibilities {
@@ -450,6 +437,7 @@
             padding-left: 25px;
             position: relative;
             break-inside: avoid;
+            font-size: 0.95rem;
         }
         
         .responsibilities li::before {
@@ -490,14 +478,14 @@
         .education-item h3 {
             color: var(--primary);
             margin-bottom: 10px;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
         
         .education-details {
             color: var(--light-text);
             font-style: italic;
             margin-bottom: 15px;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
         
         /* Contact Section */
@@ -535,6 +523,11 @@
             margin-right: 15px;
             color: white;
             width: 30px;
+        }
+        
+        .contact-details a {
+            color: white;
+            text-decoration: underline;
         }
         
         .contact-form {
@@ -683,17 +676,16 @@
         }
         
         /* Responsive Design */
-
-@media (max-width: 1200px) {
-    .gis-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-}
+        @media (max-width: 1200px) {
+            .gis-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
         
         @media (max-width: 992px) {
             header h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
             
             .responsibilities {
@@ -711,7 +703,7 @@
             }
             
             header h1 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             
             .nav-container {
@@ -753,14 +745,14 @@
             }
             
             .gis-container {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
         }
         
         @media (max-width: 576px) {
             .section-title h2 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             
             .education-container {
@@ -771,25 +763,20 @@
                 grid-template-columns: 1fr;
             }
             
-            .gis-container {
-                grid-template-columns: 1fr;
-            }
-            
             .skill-category, .gis-item {
                 padding: 20px 15px;
             }
         }
-
-        /* Add this to your existing CSS */
+        
         .btn-primary:disabled {
             opacity: 0.7;
             cursor: not-allowed;
         }
-
+        
         .fa-spin {
             animation: spin 1s linear infinite;
         }
-
+        
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
@@ -800,11 +787,11 @@
     <!-- Header -->
     <header id="home">
         <div class="container">
-            <h1>Data Analyst & Information Management Specialist</h1>
-            <p>Transforming complex data into actionable insights for business and humanitarian decision-making</p>
+            <h1>Information Management for Humanitarian Action</h1>
+            <p>Data management | GIS mapping | Capacity building | Digital learning | Humanitarian coordination</p>
             <div class="header-buttons">
-                <a href="#contact" class="btn btn-primary">Let’s work together</a>
-                <a href="https://1drv.ms/f/c/abc1c99b8b3f1305/EhNZePGgepNBlSDPyax8GmQBUx-BjbSUd0f-a5-2-nCFaA?e=07JkuX" class="btn btn-outline">View Portfolio</a>
+                <a href="#contact" class="btn btn-primary">Let's work together</a>
+                <a href="https://1drv.ms/f/c/abc1c99b8b3f1305/EhNZePGgepNBlSDPyax8GmQBUx-BjbSUd0f-a5-2-nCFaA?e=07JkuX" class="btn btn-outline" target="_blank">View Portfolio</a>
             </div>
         </div>
     </header>
@@ -812,7 +799,7 @@
     <!-- Navigation -->
     <nav>
         <div class="container nav-container">
-            <a href="#" class="logo">DataExpert</a>
+            <a href="#" class="logo">Mezgebe Abebe</a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -829,16 +816,16 @@
         <div class="container">
             <div class="section-title">
                 <h2>Professional Summary</h2>
-                <p>12+ years of experience in data analysis and information management</p>
+                <p>Information management for humanitarian operations and local capacity strengthening</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Data Analyst & Information Management Specialist with 12+ years of experience in transforming complex data into actionable insights for business and humanitarian decision-making. Skilled in SQL, Power BI, and Python for data extraction, analysis, and visualization.</p>
-                    <p>Proven ability to develop dashboards, automate reporting, and uncover trends to drive operational efficiency. Adept at collaborating with cross-functional teams to deliver data-driven solutions in fast-paced environments.</p>
-                    <p>My expertise spans across geospatial analysis, database management, and information system design, with a strong track record in both private sector and humanitarian contexts.</p>
+                    <p>Information Management professional with extensive experience supporting UN agencies, INGOs, and government offices in Ethiopia. Skilled in data management, visualization, GIS mapping, and capacity building for partners. Proven ability to produce high-quality information products including dashboards, infographics, maps, and situation reports.</p>
+                    <p>Committed to strengthening local information management capacity and supporting humanitarian coordination. Experienced in delivering training workshops on Kobo Toolbox, QGIS, Power BI, and IM principles at national and subnational levels. Fully available for frequent travel to priority zones.</p>
+                    <p>Areas of focus include disaster preparedness, anticipatory action, data quality assurance, and digital learning content development using AI-assisted tools.</p>
                 </div>
                 <div class="profile-img">
-                    <img src="https://ethiotech.net/portfolio/portfolio.JPG" alt="Profile Image">
+                    <img src="https://ethiotech.net/portfolio/portfolio.JPG" alt="Mezgebe Abebe Profile">
                 </div>
             </div>
         </div>
@@ -849,67 +836,67 @@
         <div class="container">
             <div class="section-title">
                 <h2>Key Competencies</h2>
-                <p>Comprehensive skill set in data analysis, visualization, and management</p>
+                <p>Technical skills aligned with humanitarian information management</p>
             </div>
             <div class="skills-container">
                 <div class="skill-category">
-                    <h3><i class="fas fa-chart-line"></i> Data Analysis & BI</h3>
+                    <h3><i class="fas fa-database"></i> Data Collection & Management</h3>
                     <ul class="skill-list">
-                        <li>Advanced proficiency in SQL, Excel, Power BI, and Python</li>
-                        <li>Trend analysis, segmentation, and performance optimization</li>
-                        <li>Data extraction, transformation, and loading (ETL) processes</li>
-                        <li>Quantitative and qualitative data analysis</li>
+                        <li>Kobo Toolbox (form design, data collection, server configuration)</li>
+                        <li>ODK, ActivityInfo, DHIS2, Survey123</li>
+                        <li>Data cleaning, validation, and quality assurance (QA/QC)</li>
+                        <li>4W/5W matrices and activity tracking systems</li>
                     </ul>
                 </div>
                 
                 <div class="skill-category">
-                    <h3><i class="fas fa-chart-pie"></i> Data Visualization</h3>
+                    <h3><i class="fas fa-chart-pie"></i> Data Visualization & Reporting</h3>
                     <ul class="skill-list">
-                        <li>Developing interactive dashboards (Power BI, Tableau)</li>
-                        <li>Automated reporting for stakeholders</li>
-                        <li>Infographics and data presentation</li>
-                        <li>GIS mapping and spatial visualization</li>
+                        <li>Power BI dashboards and interactive visualizations</li>
+                        <li>Situation reports (SitReps), infographics, factsheets</li>
+                        <li>Donor reporting and executive summaries</li>
+                        <li>Adobe Illustrator/InDesign for information products</li>
                     </ul>
                 </div>
                 
                 <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Database Management</h3>
+                    <h3><i class="fas fa-map"></i> GIS & Mapping</h3>
                     <ul class="skill-list">
-                        <li>PostgreSQL, SQL Server, and geodatabases</li>
-                        <li>Data integrity and efficient retrieval</li>
-                        <li>Database administration and optimization</li>
-                        <li>Geo-database design and implementation</li>
+                        <li>QGIS and ArcGIS Pro for thematic and operational maps</li>
+                        <li>ArcGIS Online, Google Earth Engine</li>
+                        <li>Spatial analysis and change detection</li>
+                        <li>Base map preparation for disaster preparedness</li>
                     </ul>
                 </div>
                 
                 <div class="skill-category">
-                    <h3><i class="fas fa-calculator"></i> Statistical Analysis</h3>
+                    <h3><i class="fas fa-chalkboard-teacher"></i> Capacity Building & Training</h3>
                     <ul class="skill-list">
-                        <li>A/B testing and needs assessments</li>
-                        <li>Forecasting using quantitative methods</li>
-                        <li>Geospatial analysis and mapping</li>
-                        <li>Monitoring and evaluation frameworks</li>
+                        <li>Training needs assessments and learning pathways</li>
+                        <li>Workshop facilitation (Kobo, QGIS, Power BI, IM principles)</li>
+                        <li>Training manuals, job aids, and user guides</li>
+                        <li>Digital learning content and AI-assisted tools</li>
                     </ul>
                 </div>
                 
                 <div class="skill-category">
-                    <h3><i class="fas fa-users"></i> Stakeholder Communication</h3>
+                    <h3><i class="fas fa-chart-line"></i> M&E & Performance Tracking</h3>
                     <ul class="skill-list">
-                        <li>Translating technical findings into actionable insights</li>
-                        <li>Cross-functional collaboration</li>
-                        <li>Training and capacity-building workshops</li>
-                        <li>Project coordination with multiple stakeholders</li>
+                        <li>Target vs. Achievement analysis</li>
+                        <li>Indicator frameworks and fund code tracking</li>
+                        <li>Pre/post-training evaluations</li>
+                        <li>Data quality assurance workflows</li>
                     </ul>
                 </div>
                 
                 <div class="skill-category">
                     <h3><i class="fas fa-tools"></i> Technical Tools</h3>
                     <ul class="skill-list">
-                        <li>GIS Software: ArcGIS, QGIS</li>
-                        <li>Programming: Python, R, JavaScript</li>
-                        <li>Database: PostgreSQL, SQL Server, ActivityInfo</li>
-                        <li>Visualization: Power BI, Tableau, Excel</li>
-                        <li>Web: HTML, CSS, GitHub</li>
+                        <li>Excel (advanced), Power BI, Tableau</li>
+                        <li>Python, R, SQL, STATA, SPSS</li>
+                        <li>QGIS, ArcGIS Pro, Google Earth Engine</li>
+                        <li>Adobe Illustrator, InDesign, Photoshop</li>
+                        <li>Kobo Toolbox, ODK, ActivityInfo, DHIS2</li>
                     </ul>
                 </div>
             </div>
@@ -921,7 +908,7 @@
         <div class="container">
             <div class="section-title">
                 <h2>GIS & Remote Sensing Focus</h2>
-                <p>Specialized expertise in geospatial analysis and remote sensing technologies</p>
+                <p>Geospatial expertise for disaster preparedness and humanitarian response</p>
             </div>
             <div class="gis-container">
                 <div class="gis-item">
@@ -929,7 +916,7 @@
                         <i class="fas fa-globe-africa"></i>
                     </div>
                     <h3>Spatial Analysis</h3>
-                    <p>Advanced geospatial analysis using ArcGIS, QGIS, and Python libraries for spatial data processing, modeling, and visualization.</p>
+                    <p>Advanced geospatial analysis using QGIS and ArcGIS for site mapping, risk assessment, and operational planning in humanitarian contexts.</p>
                 </div>
                 
                 <div class="gis-item">
@@ -937,15 +924,15 @@
                         <i class="fas fa-satellite"></i>
                     </div>
                     <h3>Remote Sensing</h3>
-                    <p>Processing and analyzing satellite imagery for land use classification, change detection, and environmental monitoring applications.</p>
+                    <p>Processing satellite imagery for land use/land cover change detection, flood hazard mapping, and environmental monitoring.</p>
                 </div>
                 
                 <div class="gis-item">
                     <div class="gis-icon">
                         <i class="fas fa-map-marked-alt"></i>
                     </div>
-                    <h3>Cartography & Mapping</h3>
-                    <p>Designing professional maps and interactive web mapping applications for humanitarian response and business intelligence.</p>
+                    <h3>Thematic Mapping</h3>
+                    <p>Designing operational maps, situation snapshots, and gap analysis visualizations for disaster preparedness and emergency response.</p>
                 </div>
                 
                 <div class="gis-item">
@@ -953,7 +940,7 @@
                         <i class="fas fa-layer-group"></i>
                     </div>
                     <h3>Geodatabase Management</h3>
-                    <p>Designing, implementing, and maintaining spatial databases for efficient storage, retrieval, and analysis of geospatial data.</p>
+                    <p>Designing and maintaining spatial databases for efficient storage, retrieval, and analysis of humanitarian datasets.</p>
                 </div>
             </div>
         </div>
@@ -964,7 +951,7 @@
         <div class="container">
             <div class="section-title">
                 <h2>Professional Experience</h2>
-                <p>Proven track record in data analysis and information management roles</p>
+                <p>Relevant experience in humanitarian information management</p>
             </div>
             
             <div class="experience-item">
@@ -972,18 +959,14 @@
                     <h3>Information Management and GIS Officer</h3>
                     <span class="experience-date">October 2023 – Present</span>
                 </div>
-                <div class="experience-company">IOM (International Organization for Migration) | Addis Ababa, Ethiopia</div>
+                <div class="experience-company">IOM – UN Migration | Addis Ababa, Ethiopia</div>
                 <ul class="responsibilities">
-                    <li>Compile, analyze, and present data on a variety of project topics to support decision-making.</li>
-                    <li>Manage databases for effective data organization.</li>
-                    <li>Integrate dashboards with ActivityInfo using tokenization to enhance 4W (Who, What, Where, When) data analysis.</li>
-                    <li>Update the cluster website with information management products, and other essential resources.</li>
-                    <li>Coordinate project implementation, liaising with internal units and external partners to manage administrative actions.</li>
-                    <li>Draft correspondence on project matters and prepare and update reports, presentations, graphics, and statistical tables.</li>
-                    <li>Participate in meetings and conferences; coordinate activities with local authorities, UN agencies, NGOs, and donors.</li>
-                    <li>Deliver monthly dashboards, infographics, maps, and other reports for stakeholders, including donors and partners.</li>
-                    <li>Conduct training and capacity-building workshops at national and subnational levels.</li>
-                    <li>Monitor and evaluate project activities, tracking progress and using quantitative and qualitative data to inform continuous improvement.</li>
+                    <li>Coordinate with UN agencies, NGOs, and government partners to collate, analyze, and visualize multi-sectoral data</li>
+                    <li>Develop interactive dashboards using ActivityInfo and Power BI for 4W analysis</li>
+                    <li>Design and deliver capacity-building workshops on Kobo Toolbox, ODK, and IM principles</li>
+                    <li>Lead data quality assurance processes before operational reporting</li>
+                    <li>Prepare situation reports, donor visibility products, and information products</li>
+                    <li>Support M&E frameworks and track progress against targets</li>
                 </ul>
             </div>
             
@@ -992,16 +975,13 @@
                     <h3>Information Management Officer</h3>
                     <span class="experience-date">October 2022 – September 2023</span>
                 </div>
-                <div class="experience-company">iMMAP (Information Management and Mine Action Programs) | Bahir Dar and Mekelle, Ethiopia</div>
+                <div class="experience-company">iMMAP | Addis Ababa, Ethiopia</div>
                 <ul class="responsibilities">
-                    <li>Developed and delivered high-quality information management outputs, including infographics, maps, reports, and needs assessments to support humanitarian operations.</li>
-                    <li>Collected, managed, and analyzed spatial and non-spatial data to drive informed decision-making.</li>
-                    <li>Supported local and international NGOs, collaborating with UN agencies and government bodies to strengthen information management for humanitarian interventions.</li>
-                    <li>Led capacity-building initiatives and supervised team members to enhance skill development.</li>
-                    <li>Created and contributed to sector-specific maps and graphics for effective planning and impact analysis.</li>
-                    <li>Conducted data analysis and visualization for presentation to stakeholders.</li>
-                    <li>Established and maintained geographic information systems, producing GIS-related products for operational use and information dissemination.</li>
-                    <li>Managed humanitarian data systems, including Kobo and humanitarian websites, to streamline data collection and access.</li>
+                    <li>Developed and delivered high-quality information products including infographics, maps, and needs assessments</li>
+                    <li>Collected, managed, and analyzed spatial and non-spatial data from UN agencies, NGOs, and government bodies</li>
+                    <li>Configured and managed Kobo Toolbox for streamlined data collection</li>
+                    <li>Supported capacity-building initiatives and contributed to team efforts to enhance IM skills</li>
+                    <li>Produced maps and graphics for operational planning and impact analysis</li>
                 </ul>
             </div>
             
@@ -1012,34 +992,24 @@
                 </div>
                 <div class="experience-company">Miya S.a.r.l. | Addis Ababa, Ethiopia</div>
                 <ul class="responsibilities">
-                    <li>Developed training materials and supported the GIS expert in delivering technical training sessions on geospatial analysis and data management.</li>
-                    <li>Supervised the GIS team, overseeing daily tasks, and ensuring adherence to project timelines, data accuracy, and quality standards.</li>
-                    <li>Monitored and evaluated team performance, implementing metrics to ensure weekly quotas and project milestones were met.</li>
-                    <li>Led quality assurance and quality control (QA/QC) activities, reviewing data accuracy, consistency, and integrity across all GIS outputs.</li>
-                    <li>Contributed to the digitization of network assets, ensuring precise mapping and documentation of infrastructure data.</li>
-                    <li>Assisted GIS experts in managing and optimizing geodatabases and geo-webservers to ensure efficient data access, processing, and storage.</li>
-                    <li>Ensured continuous GIS system operation and maintained updated datasets to support ongoing projects and client requirements.</li>
-                    <li>Developed and implemented monitoring and evaluation frameworks to assess GIS project outcomes, ensuring alignment with client and organizational objectives.</li>
+                    <li>Supported GIS team coordination, data accuracy, and quality control for asset digitization projects</li>
+                    <li>Contributed to M&E frameworks to track project milestones and prepare performance reports</li>
+                    <li>Developed training materials and assisted technical sessions on geospatial analysis and data management</li>
+                    <li>Assisted in managing geodatabases and ensuring data integrity</li>
                 </ul>
             </div>
             
             <div class="experience-item">
                 <div class="experience-header">
-                    <h3>Data Analyst and Database Administrator</h3>
+                    <h3>Geospatial Information Analyst & Database Administrator</h3>
                     <span class="experience-date">July 2010 – April 2022</span>
                 </div>
                 <div class="experience-company">Information Network Security Administration | Addis Ababa, Ethiopia</div>
                 <ul class="responsibilities">
-                    <li>Administered, supported, and monitored geospatial databases, proactively resolving issues to ensure server stability and data integrity.</li>
-                    <li>Collected, managed, and analyzed spatial and non-spatial data, presenting insights through advanced GIS tools and methodologies.</li>
-                    <li>Designed and implemented sophisticated methodologies and tools for efficient data collection, analysis, and visualization.</li>
-                    <li>Authored and coded logical and physical database schemas, ensuring accurate representation and retrieval of geospatial data.</li>
-                    <li>Conducted quality assurance checks, maintaining high standards of data accuracy and consistency.</li>
-                    <li>Organized and classified data by analyzing and interpreting diverse datasets for structured information management.</li>
-                    <li>Researched and synthesized information into briefing papers, reports, and project documents to support decision-making.</li>
-                    <li>Established and enhanced databases in collaboration with analysts and programmers, coding data for streamlined retrieval and analysis.</li>
-                    <li>Performed data cleaning and modeling to optimize data usability and accuracy.</li>
-                    <li>Prepared base maps for various projects, supporting visualization and planning needs.</li>
+                    <li>Administered geospatial databases, ensuring data integrity and server stability</li>
+                    <li>Designed methodologies for efficient data collection, analysis, and visualization using GIS tools</li>
+                    <li>Conducted QA/QC and supported M&E efforts to assess data quality</li>
+                    <li>Prepared base maps, authored database schemas, and synthesized information into reports</li>
                 </ul>
             </div>
         </div>
@@ -1059,7 +1029,7 @@
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <h3>M.Sc. in Remote Sensing and Geoinformatics</h3>
-                    <div class="education-details">Addis Ababa University – Addis Ababa, Ethiopia</div>
+                    <div class="education-details">Addis Ababa University | Addis Ababa, Ethiopia</div>
                     <p>2015 – 2017</p>
                 </div>
                 
@@ -1068,8 +1038,36 @@
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <h3>B.Sc. in Geoinformatics</h3>
-                    <div class="education-details">Adama Science and Technology University – Adama, Ethiopia</div>
+                    <div class="education-details">Adama University | Adama, Ethiopia</div>
                     <p>2007 – 2010</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" style="padding-top: 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Certifications & Trainings</h2>
+                <p>Professional development in information management and humanitarian coordination</p>
+            </div>
+            <div class="skills-container" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                <div class="skill-category" style="text-align: center;">
+                    <h3><i class="fas fa-certificate"></i> OCHA VIZCOM</h3>
+                    <p>Visualization Communication Training</p>
+                </div>
+                <div class="skill-category" style="text-align: center;">
+                    <h3><i class="fas fa-chalkboard-teacher"></i> CCCM ToT</h3>
+                    <p>Basic CCCM and Training of Trainers</p>
+                </div>
+                <div class="skill-category" style="text-align: center;">
+                    <h3><i class="fas fa-server"></i> ArcGIS Enterprise</h3>
+                    <p>Server Configuration for Oracle</p>
+                </div>
+                <div class="skill-category" style="text-align: center;">
+                    <h3><i class="fas fa-database"></i> Geodatabases</h3>
+                    <p>Configuring & Managing Multiuser Geodatabases</p>
                 </div>
             </div>
         </div>
@@ -1080,7 +1078,7 @@
         <div class="container">
             <div class="section-title">
                 <h2>Contact Me</h2>
-                <p>Available for freelance projects on Upwork, Freelancer, and Fiverr</p>
+                <p>Available for opportunities in humanitarian information management</p>
             </div>
             
             <div class="contact-container">
@@ -1093,7 +1091,7 @@
                         </li>
                         <li>
                             <i class="fas fa-phone"></i>
-                            <span>+251 947 723 995</span>
+                            <span>+251 94 772 3995</span>
                         </li>
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
@@ -1101,12 +1099,12 @@
                         </li>
                         <li>
                             <i class="fas fa-cloud"></i>
-                            <span><a href="https://1drv.ms/f/c/abc1c99b8b3f1305/EhNZePGgepNBlSDPyax8GmQBUx-BjbSUd0f-a5-2-nCFaA?e=07JkuX" style="color: white; text-decoration: underline;" target="_blank">Access my OneDrive Portfolio</a></span>
+                            <span><a href="https://1drv.ms/f/c/abc1c99b8b3f1305/EhNZePGgepNBlSDPyax8GmQBUx-BjbSUd0f-a5-2-nCFaA?e=07JkuX" target="_blank">View OneDrive Portfolio</a></span>
                         </li>
                     </ul>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/mezgebedingil-abebe-gezahegn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.upwork.com/freelancers/~01bbc8739d40775609"><i class="fab fa-upwork"></i></a>
+                        <a href="https://www.linkedin.com/in/mezgebedingil-abebe-gezahegn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.upwork.com/freelancers/~01bbc8739d40775609" target="_blank"><i class="fab fa-upwork"></i></a>
                     </div>
                 </div>
                 
@@ -1149,11 +1147,11 @@
         <div class="container">
             <div class="footer-container">
                 <div class="footer-section">
-                    <h3>DataExpert</h3>
-                    <p>Transforming complex data into actionable insights for informed decision-making and business growth.</p>
+                    <h3>Mezgebe Abebe</h3>
+                    <p>Information Management Professional dedicated to strengthening local capacity and supporting humanitarian action in Ethiopia.</p>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/mezgebedingil-abebe-gezahegn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.upwork.com/freelancers/~01bbc8739d40775609"><i class="fab fa-upwork"></i></a>
+                        <a href="https://www.linkedin.com/in/mezgebedingil-abebe-gezahegn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.upwork.com/freelancers/~01bbc8739d40775609" target="_blank"><i class="fab fa-upwork"></i></a>
                     </div>
                 </div>
                 
@@ -1170,35 +1168,32 @@
                 </div>
                 
                 <div class="footer-section">
-                    <h3>Services</h3>
+                    <h3>Core Services</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Data Analysis</a></li>
-                        <li><a href="#">Dashboard Development</a></li>
-                        <li><a href="#">GIS Mapping</a></li>
-                        <li><a href="#">Remote Sensing</a></li>
-                        <li><a href="#">Database Management</a></li>
-                        <li><a href="#">Consulting</a></li>
+                        <li><a href="#">Data Management & QA/QC</a></li>
+                        <li><a href="#">Dashboard Development (Power BI)</a></li>
+                        <li><a href="#">GIS Mapping & Spatial Analysis</a></li>
+                        <li><a href="#">Capacity Building & Training</a></li>
+                        <li><a href="#">Digital Learning Content</a></li>
+                        <li><a href="#">Humanitarian Reporting</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="copyright">
-                <p>&copy; 2025 Data Analyst & Information Management Specialist | All Rights Reserved</p>
+                <p>&copy; 2025 Mezgebe Abebe | Information Management for Humanitarian Action</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Simple JavaScript for form validation and smooth scrolling
         document.addEventListener('DOMContentLoaded', function() {
-            // Smooth scrolling for navigation links
+            // Smooth scrolling
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
-                    
                     const targetId = this.getAttribute('href');
                     if (targetId === '#') return;
-                    
                     const targetElement = document.querySelector(targetId);
                     if (targetElement) {
                         window.scrollTo({
@@ -1209,7 +1204,7 @@
                 });
             });
             
-            // Form submission with AJAX
+            // Form submission
             const contactForm = document.getElementById('contact-form');
             const submitBtn = document.getElementById('submit-btn');
             const btnText = document.getElementById('btn-text');
@@ -1220,38 +1215,29 @@
                 contactForm.addEventListener('submit', async function(e) {
                     e.preventDefault();
                     
-                    // Show loading state
                     btnText.style.display = 'none';
                     btnLoading.style.display = 'block';
                     submitBtn.disabled = true;
                     formStatus.innerHTML = '';
                     
-                    // Get form data
                     const formData = new FormData(contactForm);
                     
                     try {
                         const response = await fetch('https://formspree.io/f/mdkwvlqg', {
                             method: 'POST',
                             body: formData,
-                            headers: {
-                                'Accept': 'application/json'
-                            }
+                            headers: { 'Accept': 'application/json' }
                         });
                         
                         if (response.ok) {
-                            // Success - show custom popup
                             showCustomPopup('success', 'Thank you for your message! I will get back to you soon.');
                             contactForm.reset();
                         } else {
-                            // Error from Formspree
-                            const errorData = await response.json();
-                            showCustomPopup('error', 'Sorry, there was an error sending your message. Please try again or email me directly.');
+                            showCustomPopup('error', 'Sorry, there was an error. Please try again or email me directly.');
                         }
                     } catch (error) {
-                        // Network error
                         showCustomPopup('error', 'Network error. Please check your connection and try again.');
                     } finally {
-                        // Reset button state
                         btnText.style.display = 'block';
                         btnLoading.style.display = 'none';
                         submitBtn.disabled = false;
@@ -1259,9 +1245,7 @@
                 });
             }
             
-            // Custom popup function
             function showCustomPopup(type, message) {
-                // Create popup element
                 const popup = document.createElement('div');
                 popup.style.cssText = `
                     position: fixed;
@@ -1278,61 +1262,39 @@
                     min-width: 300px;
                     font-weight: 500;
                 `;
-                
-                // Add icon based on type
                 const icon = type === 'success' ? '✓' : '⚠';
-                popup.innerHTML = `
-                    <div style="font-size: 2rem; margin-bottom: 10px;">${icon}</div>
-                    <div>${message}</div>
-                `;
-                
-                // Add to page
+                popup.innerHTML = `<div style="font-size: 2rem; margin-bottom: 10px;">${icon}</div><div>${message}</div>`;
                 document.body.appendChild(popup);
-                
-                // Remove after 4 seconds
                 setTimeout(() => {
                     popup.style.opacity = '0';
                     popup.style.transition = 'opacity 0.5s ease';
                     setTimeout(() => {
-                        if (popup.parentNode) {
-                            popup.parentNode.removeChild(popup);
-                        }
+                        if (popup.parentNode) popup.parentNode.removeChild(popup);
                     }, 500);
                 }, 4000);
             }
             
-            // Animate elements on scroll
-            const animateOnScroll = function() {
-                const elements = document.querySelectorAll('.skill-category, .experience-item, .education-item, .gis-item');
-                
-                elements.forEach(element => {
-                    const position = element.getBoundingClientRect();
-                    
-                    // If element is in viewport
+            // Scroll animations
+            const elements = document.querySelectorAll('.skill-category, .experience-item, .education-item, .gis-item');
+            elements.forEach(el => {
+                el.style.opacity = 0;
+                el.style.transform = 'translateY(50px)';
+                el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            });
+            
+            const animateOnScroll = () => {
+                elements.forEach(el => {
+                    const position = el.getBoundingClientRect();
                     if (position.top < window.innerHeight - 100) {
-                        element.style.opacity = 1;
-                        element.style.transform = 'translateY(0)';
+                        el.style.opacity = 1;
+                        el.style.transform = 'translateY(0)';
                     }
                 });
             };
             
-            // Set initial state for animation
-            document.querySelectorAll('.skill-category, .experience-item, .education-item, .gis-item').forEach(element => {
-                element.style.opacity = 0;
-                element.style.transform = 'translateY(50px)';
-                element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-            });
-            
-            // Run on load and scroll
             window.addEventListener('load', animateOnScroll);
             window.addEventListener('scroll', animateOnScroll);
         });
     </script>
 </body>
 </html>
-
-
-
-
-
-
