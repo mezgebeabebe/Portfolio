@@ -382,6 +382,44 @@
             line-height: 1.5;
         }
         
+        /* Projects Section */
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 30px;
+        }
+        
+        .project-item {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-left: 5px solid var(--secondary);
+        }
+        
+        .project-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .project-item h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .project-item h3 i {
+            color: var(--secondary);
+            margin-right: 10px;
+        }
+        
+        .project-item p {
+            color: var(--text);
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+        
         /* Experience Section */
         .experience-item {
             background-color: white;
@@ -695,6 +733,10 @@
             .skills-container {
                 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             }
+            
+            .projects-container {
+                grid-template-columns: 1fr;
+            }
         }
         
         @media (max-width: 768px) {
@@ -805,6 +847,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#gis">GIS & RS</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -825,7 +868,7 @@
                     <p>Areas of focus include disaster preparedness, anticipatory action, data quality assurance, and digital learning content development using AI-assisted tools.</p>
                 </div>
                 <div class="profile-img">
-                    <img src="https://ethiotech.net/portfolio/portfolio.JPG" alt="Mezgebe Abebe Profile">
+                    <img src="portfolio.JPG" alt="Mezgebe Abebe Profile">
                 </div>
             </div>
         </div>
@@ -941,6 +984,29 @@
                     </div>
                     <h3>Geodatabase Management</h3>
                     <p>Designing and maintaining spatial databases for efficient storage, retrieval, and analysis of humanitarian datasets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Key Projects</h2>
+                <p>Selected technical contributions in humanitarian and environmental applications</p>
+            </div>
+            <div class="projects-container">
+                <div class="project-item">
+                    <h3><i class="fas fa-tree"></i> IDP Site Environmental Risk Mapping</h3>
+                    <p><strong>IOM – UN Migration</strong></p>
+                    <p>Led land use/land cover change (LULCC) analysis using Google Earth Engine (GEE) and Sentinel-2/Landsat time-series imagery to assess tree cover loss/gain within a 7km buffer zone around 59 IDP sites across Ethiopia (2020–2024). Produced change detection maps that informed CCCM (Camp Coordination and Camp Management) camp siting and environmental risk mitigation strategies for IOM.</p>
+                </div>
+                
+                <div class="project-item">
+                    <h3><i class="fas fa-water"></i> Flood Hazard Early Warning System</h3>
+                    <p><strong>M.Sc. Dissertation – Addis Ababa University</strong></p>
+                    <p>Developed a predictive model using SCS-CN (Soil Conservation Service – Curve Number) methodology to forecast flood occurrence from forecasted rainfall. Integrated land use/land cover, soil moisture, slope, and other spatial/non-spatial data to generate hazard maps for early warning and disaster preparedness.</p>
                 </div>
             </div>
         </div>
@@ -1162,6 +1228,7 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#gis">GIS & RS</a></li>
+                        <li><a href="#projects">Projects</a></li>
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -1181,7 +1248,7 @@
             </div>
             
             <div class="copyright">
-                <p>&copy; 2025 Mezgebedingil Abebe | Information Management for Humanitarian Action</p>
+                <p>&copy; 2025 Mezgebe Abebe | Information Management for Humanitarian Action</p>
             </div>
         </div>
     </footer>
@@ -1275,7 +1342,7 @@
             }
             
             // Scroll animations
-            const elements = document.querySelectorAll('.skill-category, .experience-item, .education-item, .gis-item');
+            const elements = document.querySelectorAll('.skill-category, .experience-item, .education-item, .gis-item, .project-item');
             elements.forEach(el => {
                 el.style.opacity = 0;
                 el.style.transform = 'translateY(50px)';
