@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mezgebedingil Abebe | Information Management Professional</title>
+    <title>Mezgebedingil Abebe | Geospatial Data & Information Management Officer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -823,237 +823,286 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+
+        /* Additional accessibility and responsive refinements */
+        html { scroll-behavior: smooth; }
+        .nav-links { flex-wrap: wrap; gap: 8px 0; }
+        .nav-links li { margin-left: 20px; }
+        .eyebrow {
+            display: inline-block; letter-spacing: .12em; text-transform: uppercase;
+            font-size: .78rem; font-weight: 700; margin-bottom: 14px; opacity: .9;
+        }
+        .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+        .tag {
+            display: inline-block; padding: 6px 11px; border-radius: 30px;
+            background: #eaf4fb; color: #245b7a; font-size: .82rem; font-weight: 500;
+        }
+        .project-item .project-meta {
+            display: block; margin: 5px 0 13px; color: var(--light-text);
+            font-size: .88rem; font-weight: 500;
+        }
+        .note {
+            margin-top: 20px; padding: 16px 18px; border-left: 4px solid var(--secondary);
+            background: #f0f7fb; border-radius: 6px; font-size: .92rem;
+        }
+        .section-intro {
+            max-width: 850px; margin: -15px auto 32px; text-align: center;
+            color: var(--light-text);
+        }
+        .experience-item p { line-height: 1.7; }
+        .experience-item .responsibilities { margin-top: 12px; }
+        .plain-list { margin: 12px 0 0 20px; }
+        .plain-list li { margin-bottom: 8px; }
+        @media (max-width: 768px) {
+            .nav-links { justify-content: center; }
+            .nav-links li { margin: 5px 9px; }
+            .gis-container { grid-template-columns: 1fr; }
+            .projects-container { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header id="home">
         <div class="container">
-            <h1>Information Management for Humanitarian Action</h1>
-            <p>Data management | GIS mapping | Capacity building | Digital learning | Humanitarian coordination</p>
+            <span class="eyebrow">Geospatial Data • Information Systems • Environmental Monitoring</span>
+            <h1>Geospatial Data & Information Management Officer</h1>
+            <p>Turning complex spatial and operational data into reliable information systems, clear analysis, and practical decisions for humanitarian and environmental programmes.</p>
             <div class="header-buttons">
-                <a href="#contact" class="btn btn-primary">Let's work together</a>
-                <a href="https://1drv.ms/f/c/abc1c99b8b3f1305/EhNZePGgepNBlSDPyax8GmQBUx-BjbSUd0f-a5-2-nCFaA?e=07JkuX" class="btn btn-outline" target="_blank">View Portfolio</a>
+                <a href="#contact" class="btn btn-primary">Let's connect</a>
+                <a href="https://1drv.ms/f/c/abc1c99b8b3f1305/EhNZePGgepNBlSDPyax8GmQBUx-BjbSUd0f-a5-2-nCFaA?e=07JkuX" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Portfolio</a>
             </div>
         </div>
     </header>
 
-    <!-- Navigation -->
     <nav>
         <div class="container nav-container">
-            <a href="#" class="logo">Mezgebedingil Abebe</a>
+            <a href="#home" class="logo">Mezgebedingil Abebe</a>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#gis">GIS & RS</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">Profile</a></li>
+                <li><a href="#skills">Capabilities</a></li>
+                <li><a href="#gis">GIS & Remote Sensing</a></li>
+                <li><a href="#projects">Selected Work</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- About Section -->
     <section id="about">
         <div class="container">
             <div class="section-title">
-                <h2>Professional Summary</h2>
-                <p>Information management for humanitarian operations and local capacity strengthening</p>
+                <h2>Professional Profile</h2>
+                <p>Geospatial data, information management, and evidence for programme delivery</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Information Management professional with extensive experience supporting UN agencies, INGOs, and government offices in Ethiopia. Skilled in data management, visualization, GIS mapping, and capacity building for partners. Proven ability to produce high-quality information products including dashboards, infographics, maps, and situation reports.</p>
-                    <p>Committed to strengthening local information management capacity and supporting humanitarian coordination. Experienced in delivering training workshops on Kobo Toolbox, QGIS, ArcGIS, Power BI, Adobe Illustrator/InDesign and IM principles at national and subnational levels. Fully available for frequent travel to priority zones.</p>
-                    <p>Areas of focus include disaster preparedness, information products, GIS and remote sensing analysis, mapping, data quality assurance, and digital learning content development.</p>
+                    <p>I am a geospatial data and information management professional with more than 13 years of experience working across humanitarian operations, geospatial analysis, database administration, and data-driven programme support in Ethiopia. My work combines spatial and non-spatial data management, quality assurance, GIS and remote sensing, data visualization, and the development of practical information products for operational and management decisions.</p>
+                    <p>In my current role with IOM–UN Migration, supporting the Shelter, Land and Site Coordination / CCCM coordination context, I help turn partner and site-level information into structured datasets, maps, dashboards, monitoring outputs, and reporting products. This includes maintaining operational datasets, checking data quality, supporting common reporting processes, and coordinating with humanitarian partners and government counterparts to improve the usefulness and consistency of shared information.</p>
+                    <p>Alongside this work, I contribute to geospatial data integrity and plot verification for coffee supply-chain information under the EU Deforestation Regulation (EUDR). This work strengthens my applied experience in spatial data validation, farm plot geometry, attribute review, and the use of geospatial evidence for environmental due diligence. My academic background in Remote Sensing and Geoinformatics also includes research on flood-hazard forecasting for small basins.</p>
+                    <p>I am particularly interested in applying reliable geospatial data systems, remote sensing, monitoring frameworks, and accessible data products to landscape restoration, land-use monitoring, climate resilience, and evidence-based development. I bring a practical, collaborative approach: understand the information need, establish clear data rules, validate the inputs, analyse the results, and communicate findings in a form that people can use.</p>
+                    <div class="tag-row">
+                        <span class="tag">Geospatial data quality</span>
+                        <span class="tag">GIS & remote sensing</span>
+                        <span class="tag">Data systems</span>
+                        <span class="tag">Dashboards & maps</span>
+                        <span class="tag">Partner coordination</span>
+                        <span class="tag">Environmental data</span>
+                    </div>
                 </div>
                 <div class="profile-img">
-                    <img src="portfolio.JPG" alt="Mezgebe Abebe Profile">
+                    <img src="portfolio.JPG" alt="Professional portrait of Mezgebedingil Abebe">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills">
         <div class="container">
             <div class="section-title">
-                <h2>Key Competencies</h2>
-                <p>Technical skills aligned with humanitarian information management</p>
+                <h2>Core Capabilities</h2>
+                <p>Technical and programme skills relevant to geospatial information systems and restoration monitoring</p>
             </div>
             <div class="skills-container">
                 <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Data Collection & Management</h3>
+                    <h3><i class="fas fa-database"></i> Data Systems & Quality</h3>
                     <ul class="skill-list">
-                        <li>Kobo Toolbox (form design, data collection, server configuration)</li>
-                        <li>ODK, ActivityInfo, DHIS2, Survey123</li>
-                        <li>Data cleaning, validation, and quality assurance (QA/QC)</li>
-                        <li>4W/5W matrices and activity tracking systems</li>
+                        <li>Designing structured datasets and repeatable data-management workflows</li>
+                        <li>Data cleaning, validation, consistency checks, and QA/QC documentation</li>
+                        <li>Managing spatial and non-spatial data in database and reporting environments</li>
+                        <li>Data collection workflows using KoboToolbox / ODK and related platforms</li>
+                        <li>Reviewing geometry, attributes, completeness, and data conformity</li>
                     </ul>
                 </div>
-                
                 <div class="skill-category">
-                    <h3><i class="fas fa-chart-pie"></i> Data Visualization & Reporting</h3>
+                    <h3><i class="fas fa-map-marked-alt"></i> GIS & Geospatial Analysis</h3>
                     <ul class="skill-list">
-                        <li>Power BI dashboards and interactive visualizations</li>
-                        <li>Situation reports (SitReps), infographics, factsheets</li>
-                        <li>Donor reporting and executive summaries</li>
-                        <li>Adobe Illustrator/InDesign for information products</li>
+                        <li>ArcGIS Pro and QGIS for spatial analysis, digitizing, and cartography</li>
+                        <li>Vector and raster data preparation, editing, and validation</li>
+                        <li>Spatial joins, overlays, proximity analysis, and boundary-based analysis</li>
+                        <li>Geodatabase design, management, and data integrity controls</li>
+                        <li>Operational maps, thematic maps, and geospatial outputs for decision-makers</li>
                     </ul>
                 </div>
-                
                 <div class="skill-category">
-                    <h3><i class="fas fa-map"></i> GIS & Mapping</h3>
+                    <h3><i class="fas fa-satellite"></i> Remote Sensing & Environment</h3>
                     <ul class="skill-list">
-                        <li>QGIS and ArcGIS Pro for thematic and operational maps</li>
-                        <li>ArcGIS Online, Google Earth Engine</li>
-                        <li>Spatial analysis and change detection</li>
-                        <li>Base map preparation for disaster preparedness</li>
+                        <li>Satellite-image interpretation and remote-sensing analysis</li>
+                        <li>Land-use / land-cover mapping and change-analysis workflows</li>
+                        <li>Experience with optical through hyperspectral imagery</li>
+                        <li>Google Earth Engine for cloud-based geospatial analysis</li>
+                        <li>Academic research in flood-hazard forecasting and environmental analysis</li>
                     </ul>
                 </div>
-                
                 <div class="skill-category">
-                    <h3><i class="fas fa-chalkboard-teacher"></i> Capacity Building & Training</h3>
+                    <h3><i class="fas fa-chart-line"></i> Analysis & Visualization</h3>
                     <ul class="skill-list">
-                        <li>Training needs assessments and learning pathways</li>
-                        <li>Workshop facilitation (Kobo, QGIS, Power BI, IM principles)</li>
-                        <li>Training manuals, job aids, and user guides</li>
-                        <li>Digital learning content and AI-assisted tools</li>
+                        <li>Power BI dashboards, indicators, and interactive reporting</li>
+                        <li>Excel-based analysis and data-quality checks</li>
+                        <li>Maps, infographics, factsheets, and concise technical summaries</li>
+                        <li>Monitoring target-versus-achievement and programme activity data</li>
+                        <li>Communicating data limitations, patterns, and operational implications</li>
                     </ul>
                 </div>
-                
                 <div class="skill-category">
-                    <h3><i class="fas fa-chart-line"></i> M&E & Performance Tracking</h3>
+                    <h3><i class="fas fa-project-diagram"></i> Information Systems & Delivery</h3>
                     <ul class="skill-list">
-                        <li>Target vs. Achievement analysis</li>
-                        <li>Indicator frameworks and fund code tracking</li>
-                        <li>Pre/post-training evaluations</li>
-                        <li>Data quality assurance workflows</li>
+                        <li>Translating programme information needs into data fields and workflows</li>
+                        <li>Supporting system users, reporting processes, and data-sharing routines</li>
+                        <li>Coordinating inputs from partners and multiple stakeholders</li>
+                        <li>Maintaining data documentation and repeatable procedures</li>
+                        <li>Improving the usability of information products for programme teams</li>
                     </ul>
                 </div>
-                
                 <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Technical Tools</h3>
+                    <h3><i class="fas fa-users"></i> Training & Collaboration</h3>
                     <ul class="skill-list">
-                        <li>Excel (advanced), Power BI, Tableau</li>
-                        <li>Python, R, SQL, STATA, SPSS</li>
-                        <li>QGIS, ArcGIS Pro, Google Earth Engine</li>
-                        <li>Adobe Illustrator, InDesign</li>
-                        <li>Kobo Toolbox, ODK, ActivityInfo, DHIS2</li>
+                        <li>Training and practical support on GIS, data collection, and information management</li>
+                        <li>Developing user guidance, job aids, and training materials</li>
+                        <li>Working with UN agencies, NGOs, implementing partners, and public institutions</li>
+                        <li>Facilitating consistent reporting and shared understanding of data definitions</li>
+                        <li>Presenting technical information to audiences with different levels of expertise</li>
                     </ul>
                 </div>
             </div>
+            <div class="note"><strong>Working approach:</strong> I aim to make geospatial information trustworthy and usable—from clear collection guidance and validation rules through analysis, visualization, documentation, and practical support to the people using the data.</div>
         </div>
     </section>
 
-    <!-- GIS & Remote Sensing Section -->
     <section id="gis">
         <div class="container">
             <div class="section-title">
-                <h2>GIS & Remote Sensing Focus</h2>
-                <p>Geospatial expertise for disaster preparedness and humanitarian response</p>
+                <h2>GIS, Remote Sensing & Environmental Data</h2>
+                <p>Geospatial methods that can support landscape, land-use, and programme monitoring</p>
             </div>
             <div class="gis-container">
                 <div class="gis-item">
-                    <div class="gis-icon">
-                        <i class="fas fa-globe-africa"></i>
-                    </div>
-                    <h3>Spatial Analysis</h3>
-                    <p>Advanced geospatial analysis using QGIS and ArcGIS for site mapping, risk assessment, and operational planning in humanitarian contexts.</p>
+                    <div class="gis-icon"><i class="fas fa-draw-polygon"></i></div>
+                    <h3>Spatial Data Validation</h3>
+                    <p>Reviewing geographic features and associated attributes for completeness, consistency, geometry quality, and alignment with agreed data standards.</p>
                 </div>
-                
                 <div class="gis-item">
-                    <div class="gis-icon">
-                        <i class="fas fa-satellite"></i>
-                    </div>
-                    <h3>Remote Sensing</h3>
-                    <p>Processing satellite imagery for land use/land cover change detection, flood hazard mapping, and environmental monitoring.</p>
+                    <div class="gis-icon"><i class="fas fa-earth-africa"></i></div>
+                    <h3>Land & Landscape Analysis</h3>
+                    <p>Using GIS and remote-sensing methods for land-use / land-cover analysis, spatial comparison, and interpretation of environmental patterns.</p>
                 </div>
-                
                 <div class="gis-item">
-                    <div class="gis-icon">
-                        <i class="fas fa-map-marked-alt"></i>
-                    </div>
-                    <h3>Thematic Mapping</h3>
-                    <p>Designing operational maps, situation snapshots, and gap analysis visualizations for disaster preparedness and emergency response.</p>
+                    <div class="gis-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Geodatabases & Workflows</h3>
+                    <p>Organizing spatial and non-spatial information, maintaining data structures, and supporting consistent updates and quality checks.</p>
                 </div>
-                
                 <div class="gis-item">
-                    <div class="gis-icon">
-                        <i class="fas fa-layer-group"></i>
-                    </div>
-                    <h3>Geodatabase Management</h3>
-                    <p>Designing and maintaining spatial databases for efficient storage, retrieval, and analysis of humanitarian datasets.</p>
+                    <div class="gis-icon"><i class="fas fa-chart-area"></i></div>
+                    <h3>Monitoring & Visualization</h3>
+                    <p>Turning spatial datasets and programme indicators into maps, dashboards, and concise outputs that support monitoring and planning.</p>
                 </div>
             </div>
+            <div class="note"><strong>Relevance to restoration programmes:</strong> Restoration monitoring depends on dependable project boundaries, consistent activity records, clear indicators, and credible spatial evidence. My experience in GIS, data validation, environmental analysis, and monitoring information provides a foundation for supporting these processes. I would apply these capabilities in line with programme-specific restoration methods and technical guidance.</div>
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects">
         <div class="container">
             <div class="section-title">
-                <h2>Key Projects</h2>
-                <p>Selected technical contributions in information management and capacity building</p>
+                <h2>Selected Projects & Applied Work</h2>
+                <p>Examples of geospatial data, information products, and environmental analysis</p>
             </div>
             <div class="projects-container">
                 <div class="project-item">
-                    <h3><i class="fas fa-chart-bar"></i> Service Mapping & Monitoring Data Collection</h3>
-                    <p><strong>Current Cluster Role – CCCM/Shelter Cluster</strong></p>
-                    <p>Developing a tool for the CCCM/Shelter Cluster to collect data from implementing partners and produce IM products clearly showing services provided in IDP sites, disseminated to donors and government bodies.</p>
+                    <h3><i class="fas fa-leaf"></i> EUDR Geospatial Data Integrity & Plot Verification</h3>
+                    <span class="project-meta">Proma Partners PLC | Coffee supply-chain data</span>
+                    <p>Supporting geospatial verification of coffee farm information for environmental due-diligence workflows. Work includes reviewing farm plot geometry and attributes, checking data integrity, and distinguishing smallholder farm records from larger estate polygons in line with the applicable project rules. This work connects geospatial quality assurance with land-use and deforestation-related compliance needs.</p>
                 </div>
-                
                 <div class="project-item">
-                    <h3><i class="fas fa-chalkboard-teacher"></i> Capacity Building & Training Support</h3>
-                    <p><strong>Multiple Government & Partner Agencies | National & Subnational Levels</strong></p>
-                    <p>Delivered multiple training workshops on Kobo Toolbox, QGIS, ArcGIS, Power BI, Adobe Illustrator/InDesign, IM principles, and other relevant capacity-building activities for government and partner agencies at national and subnational levels. Developed training manuals and job aids.</p>
+                    <h3><i class="fas fa-chart-bar"></i> Site Profiles, Service Monitoring & Operational Dashboards</h3>
+                    <span class="project-meta">IOM–UN Migration | SLSC / CCCM coordination support</span>
+                    <p>Maintaining and analysing site-level and partner activity information used to understand service availability and operational needs in displacement settings. Outputs include structured datasets, monitoring summaries, partner-presence analysis, maps, and dashboards designed to help coordination teams identify information gaps and communicate operational findings.</p>
                 </div>
-                
                 <div class="project-item">
-                    <h3><i class="fas fa-road"></i> Street Addressing Project</h3>
-                    <p><strong>Urban Planning & Municipal Service Delivery</strong></p>
-                    <p>Developed a geospatial framework for street naming and addressing, integrating cadastral, infrastructure, and administrative boundary data. The system improved municipal service delivery and emergency response, serving as a model for urban planning in two cities.</p>
+                    <h3><i class="fas fa-satellite"></i> Remote Sensing & Flood-Hazard Research</h3>
+                    <span class="project-meta">M.Sc. research | Addis Ababa University</span>
+                    <p>Completed graduate research on flood-hazard forecasting for small basins using the SCS Curve Number (SCS-CN) approach. The work strengthened my foundation in geospatial modelling, environmental data interpretation, and the use of spatial methods to inform risk-related analysis.</p>
                 </div>
-                
                 <div class="project-item">
-                    <h3><i class="fas fa-draw-polygon"></i> Asset Management for Plan Projects</h3>
-                    <p><strong>Large‑Scale Infrastructure Projects</strong></p>
-                    <p>Led geospatial asset inventories for large‑scale infrastructure projects, using high‑resolution imagery and mobile data collection (Kobo/ODK). Delivered dashboards and reports to partners, supporting project monitoring and maintenance planning.</p>
+                    <h3><i class="fas fa-map"></i> Land Inventory & Land-Use / Land-Cover Analysis</h3>
+                    <span class="project-meta">Geospatial analysis for planning and public-sector use</span>
+                    <p>Worked on land inventory and land-use / land-cover classification using satellite imagery and GIS methods. Such workflows support the organization and interpretation of land information for planning and can provide useful analytical foundations for environmental and landscape-related programmes.</p>
                 </div>
-                
                 <div class="project-item">
-                    <h3><i class="fas fa-map"></i> Land Inventory Projects</h3>
-                    <p><strong>Regional Government Partners</strong></p>
-                    <p>Conducted land use/land cover classification using multispectral satellite imagery. Results contributed to land policy recommendations and informed investment planning for regional government partners.</p>
+                    <h3><i class="fas fa-location-dot"></i> Street Addressing & Geospatial Asset Information</h3>
+                    <span class="project-meta">Urban planning, infrastructure, and municipal information</span>
+                    <p>Contributed to geospatial data workflows involving street addressing, spatial inventories, infrastructure assets, and administrative boundaries. The work required structured geographic information, data checking, and outputs that could support planning, service delivery, and operational use.</p>
+                </div>
+                <div class="project-item">
+                    <h3><i class="fas fa-users-gear"></i> Data Collection Systems & Capacity Strengthening</h3>
+                    <span class="project-meta">Partner and institutional support</span>
+                    <p>Supported the use of digital data-collection tools and GIS platforms through configuration, practical training, guidance, and troubleshooting. This experience is relevant to helping programme teams adopt consistent data-collection procedures and use information systems effectively.</p>
                 </div>
             </div>
+            <div class="note">Portfolio materials and examples can be shared through the <a href="https://1drv.ms/f/c/abc1c99b8b3f1305/EhNZePGgepNBlSDPyax8GmQBUx-BjbSUd0f-a5-2-nCFaA?e=07JkuX" target="_blank" rel="noopener noreferrer">OneDrive portfolio</a>. Please note that some operational information products may be subject to confidentiality and sharing restrictions.</div>
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience">
         <div class="container">
             <div class="section-title">
                 <h2>Professional Experience</h2>
-                <p>Relevant experience in humanitarian information management</p>
+                <p>Experience across geospatial analysis, information management, data systems, and programme support</p>
             </div>
-            
+
             <div class="experience-item">
                 <div class="experience-header">
                     <h3>Information Management Associate</h3>
                     <span class="experience-date">October 2023 – Present</span>
                 </div>
-                <div class="experience-company">IOM – UN Migration | Addis Ababa, Ethiopia</div>
+                <div class="experience-company">IOM – UN Migration | Addis Ababa, Ethiopia | Shelter, Land and Site Coordination / CCCM context</div>
                 <ul class="responsibilities">
-                    <li>Coordinate with UN agencies, NGOs, and government partners to collate, analyze, and visualize multi-sectoral data</li>
-                    <li>Develop interactive dashboards using ActivityInfo and Power BI for 4W analysis</li>
-                    <li>Design and deliver capacity-building workshops on Kobo Toolbox, ODK, and IM principles</li>
-                    <li>Lead data quality assurance processes before operational reporting</li>
-                    <li>Prepare situation reports, donor visibility products, and information products</li>
-                    <li>Support M&E frameworks and track progress against targets</li>
+                    <li>Maintain and analyse operational datasets relating to sites, service monitoring, partner presence, and activities.</li>
+                    <li>Develop and update maps, dashboards, 4W analysis, and other information products for coordination and reporting.</li>
+                    <li>Review submitted information for completeness, consistency, and data quality before it is used in analysis or reporting.</li>
+                    <li>Coordinate with UN agencies, NGOs, implementing partners, and relevant counterparts to compile and clarify data.</li>
+                    <li>Support structured data-collection and reporting processes, including digital forms and shared information workflows.</li>
+                    <li>Communicate findings and information gaps through visual products, summaries, and operational reporting.</li>
+                    <li>Provide practical support and capacity building on information management and digital data tools.</li>
+                    <li>Help ensure that datasets and products are understandable and useful to different operational stakeholders.</li>
                 </ul>
             </div>
-            
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Geospatial Data Manager / EUDR Data Management</h3>
+                    <span class="experience-date">March 2026 – Present</span>
+                </div>
+                <div class="experience-company">Proma Partners PLC | Ethiopia | Coffee supply-chain geospatial data</div>
+                <ul class="responsibilities">
+                    <li>Support the review and verification of farm geospatial data for EUDR-related workflows.</li>
+                    <li>Check plot geometry and attribute information for data integrity and consistency with project rules.</li>
+                    <li>Work with smallholder farm records and larger estate polygons according to the applicable mapping approach.</li>
+                    <li>Apply GIS and remote-sensing knowledge to help assess geospatial evidence and identify records requiring review.</li>
+                    <li>Contribute to more reliable spatial datasets for traceability and environmental due-diligence processes.</li>
+                </ul>
+            </div>
+
             <div class="experience-item">
                 <div class="experience-header">
                     <h3>Information Management Officer</h3>
@@ -1061,14 +1110,14 @@
                 </div>
                 <div class="experience-company">iMMAP | Addis Ababa, Ethiopia</div>
                 <ul class="responsibilities">
-                    <li>Developed and delivered high-quality information products including infographics, maps, and needs assessments</li>
-                    <li>Collected, managed, and analyzed spatial and non-spatial data from UN agencies, NGOs, and government bodies</li>
-                    <li>Configured and managed Kobo Toolbox for streamlined data collection</li>
-                    <li>Supported capacity-building initiatives and contributed to team efforts to enhance IM skills</li>
-                    <li>Produced maps and graphics for operational planning and impact analysis</li>
+                    <li>Collected, managed, and analysed spatial and non-spatial information from humanitarian and institutional sources.</li>
+                    <li>Produced maps, infographics, needs-assessment outputs, and other information products for operational planning.</li>
+                    <li>Configured and supported digital data-collection workflows using KoboToolbox.</li>
+                    <li>Contributed to data quality checks and the preparation of clear, consistent reporting products.</li>
+                    <li>Supported capacity-building activities to improve the use of GIS and information management tools.</li>
                 </ul>
             </div>
-            
+
             <div class="experience-item">
                 <div class="experience-header">
                     <h3>GIS Manager</h3>
@@ -1076,51 +1125,46 @@
                 </div>
                 <div class="experience-company">Miya S.a.r.l. | Addis Ababa, Ethiopia</div>
                 <ul class="responsibilities">
-                    <li>Supported GIS team coordination, data accuracy, and quality control for asset digitization projects</li>
-                    <li>Contributed to M&E frameworks to track project milestones and prepare performance reports</li>
-                    <li>Developed training materials and assisted technical sessions on geospatial analysis and data management</li>
-                    <li>Assisted in managing geodatabases and ensuring data integrity</li>
+                    <li>Supported GIS team coordination and quality control for geospatial asset-digitization activities.</li>
+                    <li>Contributed to geospatial data management and the maintenance of reliable project datasets.</li>
+                    <li>Supported monitoring of project milestones and preparation of performance information.</li>
+                    <li>Prepared technical guidance and supported sessions on geospatial analysis and data management.</li>
                 </ul>
             </div>
-            
+
             <div class="experience-item">
                 <div class="experience-header">
                     <h3>Geospatial Information Analyst & Database Administrator</h3>
                     <span class="experience-date">July 2010 – April 2022</span>
                 </div>
-                <div class="experience-company">Information Network Security Administration | Addis Ababa, Ethiopia</div>
+                <div class="experience-company">Information Network Security Administration (INSA) | Addis Ababa, Ethiopia</div>
                 <ul class="responsibilities">
-                    <li>Administered geospatial databases, ensuring data integrity and server stability</li>
-                    <li>Designed methodologies for efficient data collection, analysis, and visualization using GIS tools</li>
-                    <li>Conducted QA/QC and supported M&E efforts to assess data quality</li>
-                    <li>Prepared base maps, authored database schemas, and synthesized information into reports</li>
+                    <li>Administered geospatial databases and supported data integrity, organization, and reliable access.</li>
+                    <li>Designed and applied GIS workflows for data collection, processing, analysis, and visualization.</li>
+                    <li>Prepared base maps and worked with spatial datasets and database structures.</li>
+                    <li>Conducted quality checks and supported the preparation of technical reports and geospatial outputs.</li>
+                    <li>Applied geospatial methods to support analysis and information needs across institutional projects.</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
     <section id="education">
         <div class="container">
             <div class="section-title">
                 <h2>Education</h2>
-                <p>Academic background in Geoinformatics and Remote Sensing</p>
+                <p>Academic foundation in geospatial analysis and environmental applications</p>
             </div>
-            
             <div class="education-container">
                 <div class="education-item">
-                    <div class="education-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
+                    <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
                     <h3>M.Sc. in Remote Sensing and Geoinformatics</h3>
                     <div class="education-details">Addis Ababa University | Addis Ababa, Ethiopia</div>
                     <p>2015 – 2017</p>
+                    <p class="note">Graduate research: flood-hazard forecasting for small basins using the SCS Curve Number (SCS-CN) approach.</p>
                 </div>
-                
                 <div class="education-item">
-                    <div class="education-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
+                    <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
                     <h3>B.Sc. in Geoinformatics</h3>
                     <div class="education-details">Adama University | Adama, Ethiopia</div>
                     <p>2007 – 2010</p>
@@ -1129,12 +1173,11 @@
         </div>
     </section>
 
-    <!-- Certifications Section -->
     <section id="certifications" style="padding-top: 0;">
         <div class="container">
             <div class="section-title">
-                <h2>Certifications & Trainings</h2>
-                <p>Professional development in information management and humanitarian coordination</p>
+                <h2>Selected Training & Professional Development</h2>
+                <p>Technical learning and practical training relevant to geospatial information and programme delivery</p>
             </div>
             <div class="skills-container" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
                 <div class="skill-category" style="text-align: center;">
@@ -1142,251 +1185,223 @@
                     <p>Visualization Communication Training</p>
                 </div>
                 <div class="skill-category" style="text-align: center;">
-                    <h3><i class="fas fa-chalkboard-teacher"></i>ToT</h3>
-                    <p>Basic CCCM and Training of Trainers</p>
+                    <h3><i class="fas fa-chalkboard-teacher"></i> Training of Trainers</h3>
+                    <p>Basic CCCM and training-of-trainers learning</p>
                 </div>
                 <div class="skill-category" style="text-align: center;">
                     <h3><i class="fas fa-server"></i> ArcGIS Enterprise</h3>
-                    <p>Server Configuration for Oracle</p>
+                    <p>Server configuration for Oracle environments</p>
                 </div>
                 <div class="skill-category" style="text-align: center;">
                     <h3><i class="fas fa-database"></i> Geodatabases</h3>
-                    <p>Configuring & Managing Multiuser Geodatabases</p>
+                    <p>Configuring and managing multiuser geodatabases</p>
                 </div>
                 <div class="skill-category" style="text-align: center;">
-                    <h3><i class="fas fa-tasks"></i> Project Management Essentials</h3>
-                    <p>Project Planning, Execution & Monitoring</p>
+                    <h3><i class="fas fa-tasks"></i> Project Management</h3>
+                    <p>Project planning, execution, and monitoring</p>
                 </div>
                 <div class="skill-category" style="text-align: center;">
-                    <h3><i class="fas fa-chart-line"></i> Monitoring & Evaluation Fundamentals</h3>
-                    <p>M&E Frameworks, Indicators & Reporting</p>
+                    <h3><i class="fas fa-chart-line"></i> Monitoring & Evaluation</h3>
+                    <p>Frameworks, indicators, and reporting fundamentals</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <section id="tools">
+        <div class="container">
+            <div class="section-title">
+                <h2>Technical Toolkit</h2>
+                <p>Tools used for geospatial processing, data management, analysis, and communication</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-map"></i> GIS & Remote Sensing</h3>
+                    <p>ArcGIS Pro, QGIS, ArcGIS Online, Google Earth Engine, spatial databases, vector and raster workflows, and satellite-image analysis across optical and hyperspectral imagery.</p>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Data & Scripting</h3>
+                    <p>Python, SQL, PostgreSQL / SQL Server, Excel, and data-processing workflows. I use these tools to support analysis, data handling, and repeatable quality checks where appropriate.</p>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-mobile-screen-button"></i> Data Collection & Reporting</h3>
+                    <p>KoboToolbox, ODK, ActivityInfo, Power BI, digital forms, structured reporting workflows, and dashboard-based monitoring.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
         <div class="container">
             <div class="section-title">
-                <h2>Contact Me</h2>
-                <p>Available for opportunities in humanitarian information management</p>
+                <h2>Contact</h2>
+                <p>For opportunities and collaboration in geospatial data, information systems, and environmental monitoring</p>
             </div>
-            
             <div class="contact-container">
                 <div class="contact-info">
-                    <h3>Get In Touch</h3>
+                    <h3>Get in Touch</h3>
                     <ul class="contact-details">
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <span>mezgebedingil@outlook.com</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            <span>+251 94 772 3995</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Addis Ababa, Ethiopia</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-cloud"></i>
-                            <span><a href="https://1drv.ms/f/c/abc1c99b8b3f1305/EhNZePGgepNBlSDPyax8GmQBUx-BjbSUd0f-a5-2-nCFaA?e=07JkuX" target="_blank">View OneDrive Portfolio</a></span>
-                        </li>
+                        <li><i class="fas fa-envelope"></i><span><a href="mailto:mezgebedingil@outlook.com">mezgebedingil@outlook.com</a></span></li>
+                        <li><i class="fas fa-phone"></i><span><a href="tel:+251947723995">+251 94 772 3995</a></span></li>
+                        <li><i class="fas fa-map-marker-alt"></i><span>Addis Ababa, Ethiopia</span></li>
+                        <li><i class="fas fa-cloud"></i><span><a href="https://1drv.ms/f/c/abc1c99b8b3f1305/EhNZePGgepNBlSDPyax8GmQBUx-BjbSUd0f-a5-2-nCFaA?e=07JkuX" target="_blank" rel="noopener noreferrer">View OneDrive Portfolio</a></span></li>
                     </ul>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/mezgebedingil-abebe-gezahegn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://wa.me/251947723995" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/mezgebedingil-abebe-gezahegn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/251947723995" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-                
                 <div class="contact-form">
                     <h3>Send a Message</h3>
                     <form id="contact-form">
                         <div class="form-group">
-                            <label>Your Name:</label>
-                            <input type="text" name="name" class="form-control" required>
+                            <label for="name">Your Name</label>
+                            <input id="name" type="text" name="name" class="form-control" autocomplete="name" required>
                         </div>
                         <div class="form-group">
-                            <label>Your Email:</label>
-                            <input type="email" name="email" class="form-control" required>
+                            <label for="email">Your Email</label>
+                            <input id="email" type="email" name="email" class="form-control" autocomplete="email" required>
                         </div>
                         <div class="form-group">
-                            <label>Subject:</label>
-                            <input type="text" name="subject" class="form-control" required>
+                            <label for="subject">Subject</label>
+                            <input id="subject" type="text" name="subject" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label>Your Message:</label>
-                            <textarea name="message" class="form-control" required></textarea>
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" class="form-control" required></textarea>
                         </div>
-                        
                         <button type="submit" class="btn btn-primary" id="submit-btn">
                             <span id="btn-text">Send Message</span>
-                            <div id="btn-loading" style="display: none;">
-                                <i class="fas fa-spinner fa-spin"></i> Sending...
-                            </div>
+                            <span id="btn-loading" style="display: none;"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
                         </button>
-                        
-                        <div id="form-status" style="margin-top: 15px;"></div>
+                        <div id="form-status" style="margin-top: 15px;" role="status" aria-live="polite"></div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-container">
                 <div class="footer-section">
                     <h3>Mezgebedingil Abebe</h3>
-                    <p>Information Management Professional dedicated to strengthening local capacity and supporting humanitarian action in Ethiopia.</p>
+                    <p>Geospatial data and information management professional focused on reliable data systems, spatial analysis, and evidence for humanitarian and environmental programmes.</p>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/mezgebedingil-abebe-gezahegn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://wa.me/251947723995" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/mezgebedingil-abebe-gezahegn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/251947723995" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-                
                 <div class="footer-section">
-                    <h3>Quick Links</h3>
+                    <h3>Explore</h3>
                     <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#gis">GIS & RS</a></li>
-                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">Professional Profile</a></li>
+                        <li><a href="#skills">Core Capabilities</a></li>
+                        <li><a href="#gis">GIS & Environment</a></li>
+                        <li><a href="#projects">Selected Work</a></li>
                         <li><a href="#experience">Experience</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#education">Education</a></li>
                     </ul>
                 </div>
-                
                 <div class="footer-section">
-                    <h3>Core Services</h3>
+                    <h3>Areas of Focus</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Data Management & QA/QC</a></li>
-                        <li><a href="#">Dashboard Development (Power BI)</a></li>
-                        <li><a href="#">GIS Mapping & Spatial Analysis</a></li>
-                        <li><a href="#">Capacity Building & Training</a></li>
-                        <li><a href="#">Digital Learning Content</a></li>
-                        <li><a href="#">Humanitarian Reporting</a></li>
+                        <li><a href="#skills">Geospatial Data Quality</a></li>
+                        <li><a href="#gis">Remote Sensing & Land Analysis</a></li>
+                        <li><a href="#skills">Information Systems</a></li>
+                        <li><a href="#projects">Environmental Data</a></li>
+                        <li><a href="#skills">Dashboards & Reporting</a></li>
+                        <li><a href="#skills">Training & Collaboration</a></li>
                     </ul>
                 </div>
             </div>
-            
             <div class="copyright">
-                <p>&copy; 2026 Mezgebedingil Abebe | Information Management for Humanitarian Action</p>
+                <p>&copy; 2026 Mezgebedingil Abebe | Geospatial Data & Information Management</p>
             </div>
         </div>
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Smooth scrolling
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+                anchor.addEventListener('click', function (event) {
                     const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
+                    if (!targetId || targetId === '#') return;
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        event.preventDefault();
                         window.scrollTo({
-                            top: targetElement.offsetTop - 80,
+                            top: target.getBoundingClientRect().top + window.pageYOffset - 78,
                             behavior: 'smooth'
                         });
                     }
                 });
             });
-            
-            // Form submission
-            const contactForm = document.getElementById('contact-form');
+
+            const form = document.getElementById('contact-form');
             const submitBtn = document.getElementById('submit-btn');
             const btnText = document.getElementById('btn-text');
             const btnLoading = document.getElementById('btn-loading');
             const formStatus = document.getElementById('form-status');
-            
-            if (contactForm) {
-                contactForm.addEventListener('submit', async function(e) {
-                    e.preventDefault();
-                    
+
+            function showStatus(message, isSuccess) {
+                formStatus.textContent = message;
+                formStatus.style.color = isSuccess ? '#207544' : '#b42318';
+                formStatus.style.fontWeight = '500';
+            }
+
+            if (form) {
+                form.addEventListener('submit', async function (event) {
+                    event.preventDefault();
                     btnText.style.display = 'none';
-                    btnLoading.style.display = 'block';
+                    btnLoading.style.display = 'inline';
                     submitBtn.disabled = true;
-                    formStatus.innerHTML = '';
-                    
-                    const formData = new FormData(contactForm);
-                    
+                    formStatus.textContent = '';
+
                     try {
                         const response = await fetch('https://formspree.io/f/mdkwvlqg', {
                             method: 'POST',
-                            body: formData,
+                            body: new FormData(form),
                             headers: { 'Accept': 'application/json' }
                         });
-                        
                         if (response.ok) {
-                            showCustomPopup('success', 'Thank you for your message! I will get back to you soon.');
-                            contactForm.reset();
+                            showStatus('Thank you for your message. I will get back to you soon.', true);
+                            form.reset();
                         } else {
-                            showCustomPopup('error', 'Sorry, there was an error. Please try again or email me directly.');
+                            showStatus('Sorry, your message could not be sent. Please email me directly.', false);
                         }
                     } catch (error) {
-                        showCustomPopup('error', 'Network error. Please check your connection and try again.');
+                        showStatus('Network error. Please check your connection or email me directly.', false);
                     } finally {
-                        btnText.style.display = 'block';
+                        btnText.style.display = 'inline';
                         btnLoading.style.display = 'none';
                         submitBtn.disabled = false;
                     }
                 });
             }
-            
-            function showCustomPopup(type, message) {
-                const popup = document.createElement('div');
-                popup.style.cssText = `
-                    position: fixed;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    background: ${type === 'success' ? '#4CAF50' : '#f44336'};
-                    color: white;
-                    padding: 20px 30px;
-                    border-radius: 10px;
-                    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-                    z-index: 1000;
-                    text-align: center;
-                    min-width: 300px;
-                    font-weight: 500;
-                `;
-                const icon = type === 'success' ? '✓' : '⚠';
-                popup.innerHTML = `<div style="font-size: 2rem; margin-bottom: 10px;">${icon}</div><div>${message}</div>`;
-                document.body.appendChild(popup);
-                setTimeout(() => {
-                    popup.style.opacity = '0';
-                    popup.style.transition = 'opacity 0.5s ease';
-                    setTimeout(() => {
-                        if (popup.parentNode) popup.parentNode.removeChild(popup);
-                    }, 500);
-                }, 4000);
-            }
-            
-            // Scroll animations
-            const elements = document.querySelectorAll('.skill-category, .experience-item, .education-item, .gis-item, .project-item');
-            elements.forEach(el => {
-                el.style.opacity = 0;
-                el.style.transform = 'translateY(50px)';
-                el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-            });
-            
-            const animateOnScroll = () => {
-                elements.forEach(el => {
-                    const position = el.getBoundingClientRect();
-                    if (position.top < window.innerHeight - 100) {
-                        el.style.opacity = 1;
-                        el.style.transform = 'translateY(0)';
-                    }
+
+            const animatedItems = document.querySelectorAll(
+                '.skill-category, .experience-item, .education-item, .gis-item, .project-item'
+            );
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.08 });
+                animatedItems.forEach(function (item) {
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateY(18px)';
+                    item.style.transition = 'opacity .45s ease, transform .45s ease';
+                    observer.observe(item);
                 });
-            };
-            
-            window.addEventListener('load', animateOnScroll);
-            window.addEventListener('scroll', animateOnScroll);
+                const style = document.createElement('style');
+                style.textContent = '.is-visible { opacity: 1 !important; transform: translateY(0) !important; }';
+                document.head.appendChild(style);
+            }
         });
     </script>
 </body>
